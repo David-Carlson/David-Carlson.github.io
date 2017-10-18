@@ -3,9 +3,13 @@ layout: post
 title: Link Formatting Script
 image: /img/hello_world.jpeg
 tags: [script, python, regex]
+excerpt_separator: <!--more-->
 ---
 
-I recently saw a giant list of links to Udemy courses, in the form:
+I recently saw a giant list of links to Udemy courses, in the form below.
+I found this unwieldy and impossible to read. I wrote a python script to
+extract out the titles and add formatting as such:
+<!--more-->
 ```
 Coupons are valid for a limited time only, so grab them while they last.
 WEB DEVELOPMENT
@@ -33,7 +37,7 @@ web design creating websites from scratch
 I used regular expressions for the extraction, and then wrote several output
 formats for the links, including HTML anchor tags, markdown format, and the
 currently shown format where urls are tabbed in. This was because pastebin
-wouldn't accept links with alternate text. 
+wouldn't accept links with alternate text.
 {% highlight python %}
 {% include assets/ProcessRedditLinks.py %}
 {% endhighlight %}
