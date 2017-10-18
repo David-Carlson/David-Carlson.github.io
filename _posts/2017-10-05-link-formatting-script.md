@@ -10,4 +10,6 @@ This is a title
 
 <h1>An HTML header</h1>
 
+{% highlight python %}
 {% include assets/ProcessRedditLinks.py %}
+{% endhighlight %}
