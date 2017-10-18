@@ -10,4 +10,4 @@ This is a title
 
 <h1>An HTML header</h1>
 
-<p> {{"/assets/ProcessRedditLinks.py" | absolute_url }} </p>
+{% include assets/ProcessRedditLinks.py %}
