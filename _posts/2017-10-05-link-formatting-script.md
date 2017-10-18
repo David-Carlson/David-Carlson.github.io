@@ -29,10 +29,11 @@ responsive website template from scratch html css
 web design creating websites from scratch
 	www.udemy.com/web-design-creating-websites-from-scratch/?couponCode=WEBFREE
 ```
-
-
-
-
+## The Code
+I used regular expressions for the extraction, and then wrote several output
+formats for the links, including HTML anchor tags, markdown format, and the
+currently shown format where urls are tabbed in. This was because pastebin
+wouldn't accept links with alternate text. 
 {% highlight python %}
 {% include assets/ProcessRedditLinks.py %}
 {% endhighlight %}
