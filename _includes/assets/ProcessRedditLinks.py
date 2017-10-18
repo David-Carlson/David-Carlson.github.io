@@ -12,7 +12,7 @@ def ProcessLine(pattern, line):
 # www.udemy.com/applewatchcourse/?couponCode=EnrollFREE
 if __name__ == '__main__':
     # Extract the text after '.com/' and the next slash
-    pattern = re.compile(r'^www\.udemy\.com[/]([^/]+)[/]')
+    pattern = re.compile(r'^www[.]udemy[.]com[/]([^/]+)[/]')
     with open('links.txt', 'r') as read:
         with open('fixedlinks.txt', 'w' ) as write:
             for line in read:
