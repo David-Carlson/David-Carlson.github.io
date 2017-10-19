@@ -1,0 +1,27 @@
+Add now page
+http://nownownow.com/about
+
+Add face to website
+
+
+Clean project links
+Add individual project pages
+
+Figure out graph visualization:
+http://sharepointoscar.com/now/
+https://d3js.org/
+matplotlib: https://github.com/mpld3/mpld3
+
+VISUALIZATIONS EVERYWHERE!
+https://github.com/d3/d3/wiki/Gallery
+
+Blogs:
+  Add 3D Scatter Plot
+  Display images correctly
+  Run dynamically?
+
+Compress website
+  https://alligator.io/jekyll/compress-html/
+
+Low priority:
+Disqus comments
