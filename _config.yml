@@ -17,14 +17,13 @@ baseurl: ""
 title: David Carlson
 description: Python and C# Developer with a Bachelors in Computer Science and Artificial Intelligence - A collection of my current work, thoughts & esoterica
 
-# Output options
-timezone: "America/New_York"
+
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "_standalone/aboutme"
-  Resume: "_includes/assets/datascienceresume.pdf"
+  About Me: "/_standalone/aboutme"
+  Resume: "/_includes/assets/datascienceresume.pdf"
   Projects:
     - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner"
     - Word Snack: "http://wordsnack.net/"
@@ -102,7 +101,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
