@@ -15,15 +15,15 @@ baseurl: ""
 
 # Name of website
 title: David Carlson
+description: Python and C# Developer with a Bachelors in Computer Science and Artificial Intelligence - A collection of my current work, thoughts & esoterica
 
-# Short description of your site
-description: A collection of my current work, thoughts & esoterica
-
+# Output options
+timezone: "America/New_York"
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About Me: "standalone/aboutme"
   Projects:
     - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner"
     - Word Snack: "http://wordsnack.net/"

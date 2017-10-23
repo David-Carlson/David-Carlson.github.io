@@ -15,6 +15,10 @@ matplotlib: https://github.com/mpld3/mpld3
 VISUALIZATIONS EVERYWHERE!
 https://github.com/d3/d3/wiki/Gallery
 
+Cool 'type shit out on page'
+http://www.anudit.in/
+https://github.com/mattboldt/typed.js/
+
 Blogs:
   Add 3D Scatter Plot
   Display images correctly
