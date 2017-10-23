@@ -11,7 +11,7 @@ I've been pursuing many topics from Machine Learning, Web Development and
 Graphics programming. One day I'll go for a Masters of Computer science!
 
 ### My favorite technologies
-- Python / Numpy
+- Python / Numpy / Conda
 - C#
 - Jekyll
 

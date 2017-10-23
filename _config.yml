@@ -31,7 +31,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/profilepic.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -45,7 +45,7 @@ author:
   name: David Carlson
   email: "David.Carlson2012@gmail.com"
   github: David-Carlson    # eg. daattali
-  linkedin: David Carlson  # eg. daattali
+  linkedin: david-sylvernale-carlson  # eg. daattali
   telephone: +17742799701   # eg. +14159998888
 
 # Select which links to show in the footer
