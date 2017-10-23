@@ -23,7 +23,8 @@ timezone: "America/New_York"
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "standalone/aboutme"
+  About Me: "_standalone/aboutme"
+  Resume: "_includes/assets/datascienceresume.pdf"
   Projects:
     - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner"
     - Word Snack: "http://wordsnack.net/"
