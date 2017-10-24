@@ -23,7 +23,6 @@ description: Python and C# Developer with a Bachelors in Computer Science and Ar
 # List of links in the navigation bar
 navbar-links:
   whoami:
-    - Now: "now"
     - About me: "aboutme"
     - Resume: "resume.pdf"
   Projects:
