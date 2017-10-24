@@ -7,7 +7,5 @@ tags: [script, python, matplotlib]
 excerpt_separator: <!--more-->
 ---
 
-I found some [beautiful scatter plots of famous art](https://imgur.com/a/aRBd1){:target="_blank"} and took it
-as a challenge to recreate them! I naturally turned to matplotlib to graph the
-colors as 3D Positions.
+I found some <a href="https://imgur.com/a/aRBd1" target="_blank">beautiful scatter plots of famous art</a> and took it as a challenge to recreate them! I naturally turned to matplotlib to graph the colors as 3D Positions.
 <!--more-->
