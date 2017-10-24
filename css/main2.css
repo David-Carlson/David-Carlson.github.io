@@ -445,9 +445,10 @@ footer .theme-by {
 }
 
 .blog-tags a:hover {
-  /*color: #008AFF;*/
-  color: #DE5A51;
   text-decoration: none;
+  /*color: #008AFF;*/
+
+  color: #DE5A51;
   border-radius: 2px;
   background-color: #CCC;
 }
@@ -667,11 +668,12 @@ footer .theme-by {
 }
 .pager li a:hover,
 .pager li a:focus {
+  text-decoration: none;
+
   color: #FFF;
-  border: 1px solid #0085a1;
   /*background: #0085a1;*/
   color: #DE5A51;
-  text-decoration: none;
+  border: 1px solid #0085a1;
 }
 
 .pager {
