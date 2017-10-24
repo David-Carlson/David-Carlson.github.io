@@ -79,6 +79,8 @@ hr.small {
 ::selection {
   color: white;
   background: #0085a1;
+  /*color: #DE5A51;*/
+  /*text-decoration: none;*/
   text-shadow: none;
 }
 img::selection {
