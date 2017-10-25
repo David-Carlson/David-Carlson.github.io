@@ -23,13 +23,14 @@ if you want someone to climb with.
 
 ### Contact me!
 <!-- This sends an email to myself through formspree -->
-<form action="https://formspree.io/david.carlson2012@gmail.com">
+<form action="https://formspree.io/david.carlson2012@gmail.com" method="POST" class="form" id="contact-form">
+  <p>Shoot me an email if you wish</p>
   <div class="row">
     <div class="col-xs-6">
       <input type="email" name="_replyto" class="form-control input-lg" placeholder="Your email" title="Email">
     </div>
     <div class="col-xs-6">
-      <input type="email" name="name" class="form-control input-lg" placeholder-"Name" title="Name">
+      <input type="text" name="name" class="form-control input-lg" placeholder-"Name" title="Name">
     </div>
   </div>
   <input type="hidden" name="_subject" value="Hello from david-carlson.github.io!">
