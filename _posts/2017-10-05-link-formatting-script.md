@@ -10,7 +10,7 @@ I recently saw a giant list of links to Udemy courses, in the form below.
 I found this unwieldy and impossible to read. I wrote a python script to
 extract out the titles and add formatting.
 <!--more-->
-{% highlight python}
+<!-- {% highlight python}
 Coupons are valid for a limited time only, so grab them while they last.
 WEB DEVELOPMENT
 www.udemy.com/ultimate-web/learn/v4/?couponCode=LRNWEB
@@ -39,4 +39,4 @@ currently shown format where urls are tabbed in. This was because pastebin
 wouldn't accept links with alternate text.
 {% highlight python %}
 {% include assets/ProcessRedditLinks.py %}
-{% endhighlight %}
+{% endhighlight %} -->
