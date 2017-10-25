@@ -25,7 +25,7 @@ navbar-links:
   whoami:
     - About me: "aboutme"
     - Resume: "resume.pdf"
-    - Resume2: "resume"
+    - Resume2: "resume.md"
   Projects:
     - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner"
     - Word Snack: "http://wordsnack.net/"
