@@ -11,3 +11,7 @@ I found some <a href="https://imgur.com/a/aRBd1" target="_blank">beautiful scatt
 <!--more-->
 
 More will be added soon!
+
+<!-- Images in bootstrap grids -->
+
+<!-- Code samples -->

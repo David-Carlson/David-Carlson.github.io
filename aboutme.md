@@ -30,7 +30,7 @@ if you want someone to climb with.
       <input type="email" name="_replyto" class="form-control input-lg" placeholder="Your email" title="Email">
     </div>
     <div class="col-xs-6">
-      <input type="text" name="name" class="form-control input-lg" placeholder-"Name" title="Name">
+      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Name">
     </div>
   </div>
   <input type="hidden" name="_subject" value="Hello from david-carlson.github.io!">
