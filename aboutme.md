@@ -39,7 +39,3 @@ if you want someone to climb with.
   <input type="hidden" name="_next" value="./aboutme?message=Your message is going through the tubes, thanks!">
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 </form>
-
-<div class="row">
-
-</div>
