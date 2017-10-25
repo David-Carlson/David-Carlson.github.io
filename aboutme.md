@@ -19,3 +19,26 @@ Graphics programming. One day I'll go for a Masters of Computer science!
 I love singing and playing piano to unwind from these technical subjects.
 If I need a complete reset I will go rock climbing or dancing. Let me know
 if you want someone to climb with.
+
+
+### Contact me!
+<!-- This sends an email to myself through formspree -->
+<form action="https://formspree.io/david.carlson2012@gmail.com">
+  <div class="row">
+    <div class="col-xs-6">
+      <input type="email" name="_replyto" class="form-control input-lg" placeholder="Your email" title="Email">
+    </div>
+    <div class="col-xs-6">
+      <input type="email" name="name" class="form-control input-lg" placeholder-"Name" title="Name">
+    </div>
+  </div>
+  <input type="hidden" name="_subject" value="Hello from david-carlson.github.io!">
+  <textarea name="content" type="text" class="form-control input-lg" placeholder="Message" title="Message" required="required" rows="s"></textarea>
+  <input type="text" name="_gotcha" style="display: none">
+  <input type="hidden" name="_next" value="./aboutme?message=Your message is going through the tubes, thanks!">
+  <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+</form>
+
+<div class="row">
+
+</div>
