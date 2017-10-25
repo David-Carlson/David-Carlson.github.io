@@ -24,7 +24,6 @@ description: Python and C# Developer with a Bachelors in Computer Science and Ar
 navbar-links:
   whoami:
     - About me: "aboutme"
-    - Second page: "resume"
     - Third page: "google.com"
   Projects:
     - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner"
