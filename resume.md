@@ -2,4 +2,4 @@
 layout: page
 title: Resume
 ---
-{% include assets/ex.htm %}
+{% include assets/resume.htm %}
