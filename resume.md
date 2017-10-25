@@ -4,4 +4,4 @@ title: Resume
 ---
 # Resume
 There should be something here
-{% include assets/small-resume.htm}
+<!-- {% include assets/small-resume.htm} -->
