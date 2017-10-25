@@ -22,8 +22,8 @@ if you want someone to climb with.
 
 
 ### Contact me!
-<!-- This sends an email to myself through formspree -->
-<!-- <form action="https://formspree.io/david.carlson2012@gmail.com" method="POST" class="form" id="contact-form">
+
+<form action="https://formspree.io/david.carlson2012@gmail.com" method="POST" class="form" id="contact-form">
   <p>Shoot me an email if you wish</p>
   <div class="row">
     <div class="col-xs-6">
@@ -38,4 +38,4 @@ if you want someone to climb with.
   <input type="text" name="_gotcha" style="display: none">
   <input type="hidden" name="_next" value="./aboutme?message=Your message is going through the tubes, thanks!">
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-</form> -->
+</form>
