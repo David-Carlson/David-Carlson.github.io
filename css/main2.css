@@ -154,20 +154,12 @@ textarea {
   font-weight: 800;
 }
 
-// .navbar-custom .navbar-brand:hover,
-// .navbar-custom .navbar-brand:focus,
-// .navbar-custom .nav li a:hover,
-// .navbar-custom .nav li a:focus {
-//   text-decoration: none;
-//   color: #DE5A51;
-// }
-
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   text-decoration: none;
-  color: #fff;
+  color: #c2c2c2;
 }
 
 .navbar-custom .nav li.show-children a:hover,
@@ -372,7 +364,7 @@ footer .theme-by {
   }
 }
 .text-muted {
-    color: white;
+    color: #c2c2c2;
 }
 
 /* --- Post preview --- */
