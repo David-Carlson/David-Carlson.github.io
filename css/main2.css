@@ -170,10 +170,10 @@ textarea {
   color: white;
 }
 
-.navbar-custom .nav li.show-children + a
+.navbar-custom .nav li.show-children a:hover,
+.navbar-custom .nav li.show-children a:focus
 {
   color: #DE5A51;
-  
 }
 
 
