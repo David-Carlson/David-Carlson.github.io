@@ -154,20 +154,27 @@ textarea {
   font-weight: 800;
 }
 
+// .navbar-custom .navbar-brand:hover,
+// .navbar-custom .navbar-brand:focus,
+// .navbar-custom .nav li a:hover,
+// .navbar-custom .nav li a:focus {
+//   text-decoration: none;
+//   color: #DE5A51;
+// }
+
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   text-decoration: none;
-  color: #DE5A51;
-}
-
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus
-{
   color: white;
 }
 
+.navbar-custom .nav li.show-children + a
+{
+  color: #DE5A51;
+  
+}
 
 
 .navbar-custom .navbar-brand-logo {
