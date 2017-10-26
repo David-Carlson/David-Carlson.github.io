@@ -167,10 +167,6 @@ textarea {
 {
   color: #DE5A51;
 }
-// .navbar-custom .nav li.show-children a:hover, .navbar-custom .nav li.show-children a:focus
-// {
-//
-// }
 
 .navbar-custom .navbar-brand-logo {
   padding-top: 0;
@@ -346,7 +342,8 @@ footer {
 }
 
 footer a {
-  color: #404040;
+  /*color: #404040;*/
+  color: #9b4e46;
 }
 
 footer .list-inline {
@@ -378,7 +375,8 @@ footer .theme-by {
   }
 }
 .text-muted {
-    color: #c2c2c2;
+    /*color: #c2c2c2;*/
+    color: #9b4e46;
 }
 
 /* --- Post preview --- */
