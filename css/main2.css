@@ -8,12 +8,8 @@
 
 body {
   position: relative;
-
-  color: #4E4E4E;
-  color: blue;
-  // background: #F2F1ED;
-  background: #EEE url(../img/whitenoise.gif);
-
+  color: #4E4E4E !important;
+  background: #EEE url(../img/whitenoise.gif) !important;
   font-family: 'Lora', 'Times New Roman', serif;
   /*font-family: "adelle-1", "adelle-2";*/
   font-size: 18px;
@@ -122,7 +118,7 @@ img {
 }
 
 textarea {
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .fadelink {
