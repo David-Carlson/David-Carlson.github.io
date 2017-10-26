@@ -1,19 +1,16 @@
----
----
-// @import url("pygment_highlights.css");
-@import "pygment_highlights.css";
+@import url("pygment_highlights.css");
 
-$gray:      #4E4E4E;
-$red:       #CC675B;
-$lightgray: #B8C4B9;
+// $gray:      #4E4E4E;
+// $red:       #CC675B;
+// $lightgray: #B8C4B9;
 
 /* --- General --- */
 
 body {
   position: relative;
 
-  color: $gray;
-  color: powderblue;
+  color: #4E4E4E;
+  color: blue;
   // background: #F2F1ED;
   background: #EEE url(../img/whitenoise.gif);
 
@@ -32,15 +29,14 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
 }
 a {
-  /*color: #CC675B;*/
-  color: $red;
+  color: #CC675B;
 }
 a:hover,
 a:focus {
   text-decoration: none;
   /*color: #0085a1;*/
 
-  color: $lightgray;
+  color: #B8C4B9;
 
 }
 blockquote {
