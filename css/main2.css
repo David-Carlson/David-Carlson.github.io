@@ -75,17 +75,28 @@ hr.small {
   display: none;
 }
 
+// ::-moz-selection {
+//   color: white;
+//   background: #0085a1;
+//   text-shadow: none;
+// }
+// ::selection {
+//   color: white;
+//   background: #0085a1;
+//   /*color: #DE5A51;*/
+//   /*text-decoration: none;*/
+//   text-shadow: none;
+// }
 ::-moz-selection {
-  color: white;
-  background: #0085a1;
-  text-shadow: none;
+  color: #fff;
+  color: rgba(255, 255, 255, .85);
+  background: #CC675B;
 }
+
 ::selection {
-  color: white;
-  background: #0085a1;
-  /*color: #DE5A51;*/
-  /*text-decoration: none;*/
-  text-shadow: none;
+  color: #fff;
+  color: rgba(255, 255, 255, .85);
+  background: #CC675B;
 }
 img::selection {
   color: white;
