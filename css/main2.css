@@ -32,10 +32,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  /*color: #0085a1;*/
-
   color: #B8C4B9;
-
 }
 blockquote {
   color: #808080;
@@ -162,8 +159,6 @@ textarea {
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   text-decoration: none;
-  /*color: #0085a1;*/
-
   color: #DE5A51;
 }
 
@@ -360,6 +355,9 @@ footer .theme-by {
   footer .copyright {
     font-size: 16px;
   }
+}
+.text-muted {
+    color: white;
 }
 
 /* --- Post preview --- */
