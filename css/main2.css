@@ -264,14 +264,14 @@ textarea {
 }
 
 // Make the the nav button dark gray
-nav.navbar-default .navbar-header .navbar-toggle {
+nav.navbar-default .navbar-header button.navbar-toggle {
   border-color: #4E4E4E;
 }
 nav.navbar-default .navbar-header .navbar-toggle .icon-bar{
   background-color: #4E4E4E;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /* Multi-level navigation links */
