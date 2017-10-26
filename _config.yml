@@ -30,6 +30,12 @@ navbar-links:
     - Word Snack: "http://wordsnack.net/"
     - Blackbody Simulatation: "https://github.com/David-Carlson/BlackBody"
 
+# Color variables for CSS styling
+colors:
+  gray:      '#4E4E4E'
+  red:       '#CC675B'
+  lightgray: '#B8C4B9'
+
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/profilepic2.jpg"
