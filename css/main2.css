@@ -11,10 +11,10 @@ body#whitepaper {
   font-size: 18px;
 }
 #whitepaper {
-  background: #EEE url("../img/rednoise.gif") !important;
+  background: #EEE url("../img/whitepaper.gif") !important;
 }
 #redpaper {
-  background: #CC675B url("../img/rednoise.gif") !important;
+  background: #CC675B url("../img/redpaper.gif") !important;
 }
 p {
   margin: 30px 0;
