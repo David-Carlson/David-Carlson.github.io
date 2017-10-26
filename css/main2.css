@@ -6,7 +6,7 @@
 
 /* --- General --- */
 
-body.paper {
+body#paper {
   position: relative;
   color: #4E4E4E !important;
   background: #EEE url("../img/rednoise.gif") !important;
