@@ -263,6 +263,10 @@ textarea {
   }
 }
 
+nav .navbar-header button span{
+  color: #4E4E4E;
+}
+
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
   position: relative;
