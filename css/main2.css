@@ -2,7 +2,7 @@
 
 /* --- General --- */
 
-body#paper {
+body#whitepaper {
   position: relative;
   color: #4E4E4E;
 
@@ -10,8 +10,11 @@ body#paper {
   /*font-family: "adelle-1", "adelle-2";*/
   font-size: 18px;
 }
-#paper {
+#whitepaper {
   background: #EEE url("../img/rednoise.gif") !important;
+}
+#redpaper {
+  background: #CC675B url("../img/rednoise.gif") !important;
 }
 p {
   margin: 30px 0;
