@@ -10,8 +10,17 @@
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
+  <!-- Sets the toolbar color to red for (Chrome/Firefox OS/Opera), Windows, iOS Safari-->
+  <meta name="theme-color" content="#CC675B">
+  <meta name="msapplication-navbutton-color" content="#CC675B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Include high-res favicon on toolbar -->
+  <!-- <link rel="icon" sizes="192x192" href="nice-highres.png"> -->
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+
 
   {% include gtm_head.html %}
 
@@ -88,7 +97,7 @@
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
-  
+
 
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
