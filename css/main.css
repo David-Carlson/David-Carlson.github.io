@@ -163,6 +163,11 @@ nav.navbar-default .navbar-header .navbar-toggle .icon-bar{
 nav.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
+/* Add*/
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    border-color: #4E4E4E;
+}
 
 .navbar-custom .navbar-brand-logo {
   padding-top: 0;
