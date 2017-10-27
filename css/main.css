@@ -30,7 +30,6 @@ h1,h2,h3,h4,h5,h6 {
 a {
   color: #CC675B;
 }
-
 a:hover,
 a:focus {
   text-decoration: none;
@@ -47,6 +46,7 @@ a:focus {
   color: #404040;
   font-weight: 800;
 }
+
 
 blockquote {
   color: #808080;
@@ -312,6 +312,9 @@ nav.navbar-default .navbar-header .navbar-toggle .icon-bar{
   .navbar-custom .nav .navlinks-container.show-children .navlinks-children {
     display: block;
   }
+  .navbar-custom .nav .navlinks-container .navlinks-children a:hover {
+    color: #DE5A51;
+  }
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom .nav .navlinks-container {
@@ -331,6 +334,10 @@ nav.navbar-default .navbar-header .navbar-toggle .icon-bar{
 
     border: 1px solid #eaeaea;
     border-width: 0 1px 1px;
+  }
+  /* Custom */
+  .navbar-custom .nav .navlinks-container a:hover {
+    color: #DE5A51;
   }
 }
 
