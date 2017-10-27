@@ -153,24 +153,17 @@ textarea {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-
-
-
-/*.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
-  text-decoration: none;
-
-  color: #c2c2c2;
+/*Make the the nav button white*/
+nav.navbar-default .navbar-header .navbar-toggle {
+  border-color: transparent;
 }
-
-.navbar-custom .nav li.show-children a:hover,
-.navbar-custom .nav li.show-children a:focus
-{
-
-  color: #DE5A51;
-}*/
+nav.navbar-default .navbar-header .navbar-toggle .icon-bar{
+  /*background-color: #4E4E4E;*/
+  background-color: white;
+}
+nav.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
 
 .navbar-custom .navbar-brand-logo {
   padding-top: 0;
@@ -265,17 +258,6 @@ textarea {
     width: 100%;
   }
 }
-
-/*Make the the nav button dark gray
-nav.navbar-default .navbar-header button.navbar-toggle {
-  border-color: #4E4E4E;
-}
-nav.navbar-default .navbar-header .navbar-toggle .icon-bar{
-  background-color: #4E4E4E;
-}
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: transparent;
-}*/
 
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
