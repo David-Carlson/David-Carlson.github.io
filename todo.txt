@@ -31,3 +31,16 @@ Low priority:
 Disqus comments
 
 http://www.delarocque.com.br/11/home.html#mywork
+
+LARGE:
+  Finish 3d scatter plot post
+  Fix resume page (google service?)
+    <iframe src="http://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+    but you should replace the bold URL with your own address. As I mentioned, the document viewer works for PDF and PPT files.
+  Project pages for old work
+SMALL:
+
+  when small and unopened, tween parents to/from whitepaper
+  tween opened parents from white to dark gray
+
+  turn submit button red
