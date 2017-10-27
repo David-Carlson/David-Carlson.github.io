@@ -144,6 +144,12 @@ textarea {
   -webkit-transition-property: all;
 }
 
+.btn-primary {
+  background-color: #b35352;
+  border-color: #b35352;
+}
+
+
 /* --- Navbar --- */
 
 .navbar-custom {
@@ -714,7 +720,6 @@ footer .theme-by {
   text-decoration: none;
 
   color: #FFF;
-  /*background: #0085a1;*/
   color: #DE5A51;
   border: 1px solid #0085a1;
 }
