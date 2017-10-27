@@ -158,8 +158,7 @@ nav.navbar-default .navbar-header .navbar-toggle {
   border-color: transparent;
 }
 nav.navbar-default .navbar-header .navbar-toggle .icon-bar{
-  /*background-color: #4E4E4E;*/
-  background-color: white;
+  background-color: #4E4E4E;
 }
 nav.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent;
