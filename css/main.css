@@ -11,10 +11,10 @@ body#whitepaper {
   font-size: 18px;
 }
 #whitepaper {
-  background: #EEE url("../img/whitepaper.gif") !important;
+  background: #EEE url("../img/whitepaper.png") !important;
 }
 #redpaper {
-  background: #CC675B url("../img/redpaper.gif") !important;
+  background: #CC675B url("../img/redpaper.png") !important;
 }
 p {
   margin: 30px 0;
