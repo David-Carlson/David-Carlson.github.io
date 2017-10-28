@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Link Formatting Script
-image: /img/hello_world.jpeg
+image: /img/hello_world.jpg
 tags: [script, python, regex]
 excerpt_separator: <!--more-->
 ---

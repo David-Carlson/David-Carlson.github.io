@@ -1,8 +1,15 @@
+Move JS and CSS below the fold
+Optimize images
+Minify/combine css/JS/HTML
+Remove pyments imports (use highlight.js?)
+
+
+
+
+
+
 Add now page
 http://nownownow.com/about
-
-Add face to website
-
 
 Clean project links
 Add individual project pages
@@ -42,5 +49,3 @@ SMALL:
 
   when small and unopened, tween parents to/from whitepaper
   tween opened parents from white to dark gray
-
-  turn submit button red

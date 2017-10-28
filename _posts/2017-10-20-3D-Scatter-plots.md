@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Plotting art on a graph
-image: /img/hello_world.png
+image: /img/blog/goghpink.jpg
 tags: [script, python, matplotlib]
 
 excerpt_separator: <!--more-->
