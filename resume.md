@@ -11,4 +11,7 @@ title: Resume
     <div class="col-xs-1  col-sm-2 col-md-3"></div>
   </div>
 </div>
+<div class="text-center">
+    <img src="/img/blog/dataresume.jpg" class="rounded">
+</div>
 <!-- <img src="/img/blog/dataresume.jpg" alt="My resume" width="100%"> -->
