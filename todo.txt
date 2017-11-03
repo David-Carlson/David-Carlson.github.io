@@ -18,6 +18,10 @@ matplotlib: https://github.com/mpld3/mpld3
 
 VISUALIZATIONS EVERYWHERE!
 https://github.com/d3/d3/wiki/Gallery
+https://d3js.org/
+http://jquery.com/
+https://www.mathjax.org/
+https://threejs.org/
 
 Cool 'type shit out on page'
 http://www.anudit.in/
