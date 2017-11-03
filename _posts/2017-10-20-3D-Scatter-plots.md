@@ -24,17 +24,17 @@ navbar-links:
   Projects:
     - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner"
 
-{% assign img-class="col-lg-3 col-md-3 col-sm-3 col-xs-12" %}
+<!-- {% assign img-class="col-lg-3 col-md-3 col-sm-3 col-xs-12" %}
 <p> {{ img-class }}</p>
 {% for image in page.image-set %}
   <p> {{ image.link }}</p>
   <p> {{ image.alt }}</p>
   <p> {{ image.text }}</p>
-{% endfor %}
+{% endfor %} -->
 <div class="container">
   <div class="row">
     {% for image in page.image-set %}
-      {% include img-grid.html link=link alt=alt text=text class=img-class}
+      {% include img-grid.html link=link alt=alt text=text class=img-class %}
     {% endfor %}
   </div>
 </div>
