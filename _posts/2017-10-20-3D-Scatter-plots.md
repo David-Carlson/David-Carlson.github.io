@@ -4,12 +4,12 @@ title: Plotting art on a graph
 image: /img/blog/goghpink.jpg
 tags: [script, python, matplotlib]
 image-set:
-  - link: /img/blog/goghpink.jpg
-    alt: Alt text 1
-    text: Text 1
-  - link: /img/blog/what.png
-    alt: This is alt text 2
-    text: text 2
+  - link: /img/blog/3DScatterPlot/plots/pprit-dali.jpg
+    alt: Salvadore Dali plot
+    text: Salvadore Dali
+  - link: /img/blog/3DScatterPlot/plots/pprit-gogh.jpg
+    alt: Van Gogh plot
+    text: Van Gogh 
 
 excerpt_separator: <!--more-->
 ---
@@ -25,12 +25,6 @@ I found some <a href="https://imgur.com/a/aRBd1" target="_blank">beautiful scatt
     - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner" -->
 
 {% assign img-class="col-lg-3 col-md-3 col-sm-3 col-xs-12" %}
-<p> {{ img-class }}</p>
-<!-- {% for image in page.image-set %}
-  <p> pre {{ image.link }}</p>
-  <p> pre {{ image.alt }}</p>
-  <p> pre {{ image.text }}</p>
-{% endfor %} -->
 <div class="container">
   <div class="row">
     {% for i in page.image-set %}
