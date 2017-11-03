@@ -12,16 +12,17 @@
 {% else %}
   {% capture linkurl %}{{ include.link[1] }}{% endcapture %}
 {% endif %}
-<div class="container">
 
-     <h1 class="my-4 text-center text-lg-left">Thumbnail Gallery</h1>
+     <!-- <h1 class="my-4 text-center text-lg-left">Thumbnail Gallery</h1> -->
 
-     <div class="row text-center text-lg-left">
-<div class={{ include.}}>
-  <a href="#" class="d-block mb-4 h-100">
-    <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-  </a>
-</div>
-"col-lg-3 col-md-4 col-xs-6"
-
-<a href="{{ linkurl }}">{{ include.link[0] }}</a>
+  <!-- <div class="row text-center text-lg-left">
+    <a href="#" class="d-block mb-4 h-100">
+      <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+    </a>
+  </div> -->
+  <!-- <a href="{{ linkurl }}">{{ include.link[0] }}</a> -->
+  <div class="{{ include.class }}">
+    <p> {{ include.link }} {{ linkurl }}</p>
+    <p> {{ include.alt }}</p>
+    <p> {{ include.text }}</p>
+  </div>
