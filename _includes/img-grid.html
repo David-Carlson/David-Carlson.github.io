@@ -1,5 +1,5 @@
-{% capture before %}{{ include.link[1] | split: "://" | first }}{% endcapture %}
-{% capture after %}{{ include.link[1] | split: "://" | last }}{% endcapture %}
+{% capture before %}{{ include.link | split: "://" | first }}{% endcapture %}
+{% capture after %}{{ include.link | split: "://" | last }}{% endcapture %}
 {% assign internal = true %}
 {% if before != after %}
   {% if before == "http" or before == "https" %}
@@ -8,9 +8,9 @@
 {% endif %}
 
 {% if internal %}
-  {% capture linkurl %}{{ site.baseurl }}/{{ include.link[1] }}{% endcapture %}
+  {% capture linkurl %}{{ site.baseurl }}/{{ include.link }}{% endcapture %}
 {% else %}
-  {% capture linkurl %}{{ include.link[1] }}{% endcapture %}
+  {% capture linkurl %}{{ include.link }}{% endcapture %}
 {% endif %}
 
      <!-- <h1 class="my-4 text-center text-lg-left">Thumbnail Gallery</h1> -->
@@ -22,7 +22,7 @@
   </div> -->
   <!-- <a href="{{ linkurl }}">{{ include.link[0] }}</a> -->
   <div class="{{ include.class }}">
-    <p> {{ include.link }} {{ linkurl }}</p>
-    <p> {{ include.alt }}</p>
-    <p> {{ include.text }}</p>
+    <p> embed {{ include.link }} middle {{ linkurl }}</p>
+    <p> embed {{ include.alt }}</p>
+    <p> embed {{ include.text }}</p>
   </div>
