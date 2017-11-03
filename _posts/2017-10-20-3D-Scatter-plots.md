@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Plotting art on a graph
-image: /img/blog/goghpink.jpg
+image: /img/blog/3DScatterPlot/goghpink.jpg
 tags: [script, python, matplotlib]
 image-set:
   - link: /img/blog/3DScatterPlot/plots/pprit-dali.jpg
@@ -9,7 +9,7 @@ image-set:
     text: Salvadore Dali
   - link: /img/blog/3DScatterPlot/plots/pprit-gogh.jpg
     alt: Van Gogh plot
-    text: Van Gogh 
+    text: Van Gogh
 
 excerpt_separator: <!--more-->
 ---
