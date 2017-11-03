@@ -1,4 +1,4 @@
-{% capture before %}{{ include.link | split: "://" | first }}{% endcapture %}
+<!-- {% capture before %}{{ include.link | split: "://" | first }}{% endcapture %}
 {% capture after %}{{ include.link | split: "://" | last }}{% endcapture %}
 {% assign internal = true %}
 {% if before != after %}
@@ -11,7 +11,7 @@
   {% capture linkurl %}{{ site.baseurl }}/{{ include.link }}{% endcapture %}
 {% else %}
   {% capture linkurl %}{{ include.link }}{% endcapture %}
-{% endif %}
+{% endif %} -->
 
      <!-- <h1 class="my-4 text-center text-lg-left">Thumbnail Gallery</h1> -->
 
@@ -22,7 +22,14 @@
   </div> -->
   <!-- <a href="{{ linkurl }}">{{ include.link[0] }}</a> -->
   <div class="{{ include.class }}">
-    <p> embed {{ include.link }} middle {{ linkurl }}</p>
-    <p> embed {{ include.alt }}</p>
-    <p> embed {{ include.text }}</p>
+    <div class="thumbnail">
+      <a href="{{ include.link }}" target="_blank">
+        <img src="{{ include.link }}" alt="{{ include.alt }}">
+        <div class="caption">{{ include.caption }}</div>
+      </a>
+
+      <!-- <p> embed {{ include.link }} middle {{ linkurl }}</p>
+      <p> embed {{ include.alt }}</p>
+      <p> embed {{ include.text }}</p> -->
+    </div>
   </div>

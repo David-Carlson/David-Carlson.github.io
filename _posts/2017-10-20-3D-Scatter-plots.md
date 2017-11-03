@@ -26,18 +26,15 @@ I found some <a href="https://imgur.com/a/aRBd1" target="_blank">beautiful scatt
 
 {% assign img-class="col-lg-3 col-md-3 col-sm-3 col-xs-12" %}
 <p> {{ img-class }}</p>
-{% for image in page.image-set %}
+<!-- {% for image in page.image-set %}
   <p> pre {{ image.link }}</p>
   <p> pre {{ image.alt }}</p>
   <p> pre {{ image.text }}</p>
-{% endfor %}
+{% endfor %} -->
 <div class="container">
   <div class="row">
     {% for i in page.image-set %}
-      <p> link {{ i.link }}</p>
-      <p> link {{ i.alt }}</p>
-      <p> link {{ i.text }}</p>
-      {% include img-grid.html link=i.link alt=i.alt text=i.text class=img-class %}
+      {% include img-grid.html link=i.link alt=i.alt caption=i.text class=img-class %}
     {% endfor %}
   </div>
 </div>
