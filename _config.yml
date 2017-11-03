@@ -26,7 +26,6 @@ navbar-links:
   whoami:
     - About me: "single-pages/aboutme"
     - Résumé: "single-pages/resume"
-    - what: "single-pages/whatsthis"
   Projects:
     - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner"
     - Word Snack: "http://wordsnack.net/"
