@@ -24,17 +24,20 @@ I found some <a href="https://imgur.com/a/aRBd1" target="_blank">beautiful scatt
   Projects:
     - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner" -->
 
-<!-- {% assign img-class="col-lg-3 col-md-3 col-sm-3 col-xs-12" %}
+{% assign img-class="col-lg-3 col-md-3 col-sm-3 col-xs-12" %}
 <p> {{ img-class }}</p>
 {% for image in page.image-set %}
-  <p> {{ image.link }}</p>
-  <p> {{ image.alt }}</p>
-  <p> {{ image.text }}</p>
-{% endfor %} -->
+  <p> pre {{ image.link }}</p>
+  <p> pre {{ image.alt }}</p>
+  <p> pre {{ image.text }}</p>
+{% endfor %}
 <div class="container">
   <div class="row">
-    {% for image in page.image-set %}
-      {% include img-grid.html link=link alt=alt text=text class=img-class %}
+    {% for i in page.image-set %}
+      <p> link {{ i.link }}</p>
+      <p> link {{ i.alt }}</p>
+      <p> link {{ i.text }}</p>
+      {% include img-grid.html link=i.link alt=i.alt text=i.text class=img-class %}
     {% endfor %}
   </div>
 </div>
