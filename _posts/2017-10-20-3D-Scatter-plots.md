@@ -34,25 +34,21 @@ e.g when a point moves up, away from the blue plane, the point becomes more blue
 <!-- class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" -->
 {% assign img-class="col-lg-6 col-md-6 col-sm-6 col-xs-12" %}
 <!-- <div class="container mx-auto"> -->
-  <div class="row">
-    {% for i in page.image-set %}
-      {% include img-grid.html class=img-class link=i.link alt=i.alt caption=i.text text-link:i.text-link %}
-    {% endfor %}
-  </div>
+<div class="row">
+  {% for i in page.image-set %}
+    {% include img-grid.html class=img-class link=i.link alt=i.alt caption=i.text text-link:i.text-link %}
+  {% endfor %}
+</div>
 <!-- </div> -->
 
 Usage:  I used Python's ArgumentParser to make my tool easier to use. An example use:
 
 ```
-python PlotImage.py *.jpg --points 20000 --save --pprint
+python PlotImage.py *.jpg --points 20000 --pprint
 ```
 This plots all Jpeg images using at most 20,000 points from the image. It pretty-prints
 the plot by removing axis labels, titles, and doesn't draw the original image.
-Lastly, it saves the plot image with a prefix added to the filepath.
-
-
-More will be added soon!
-
-<!-- Images in bootstrap grids -->
+It also uses other optional flags such as --save to save the plotted images and
+--nodisplay, which runs the program without drawing to the screen.
 
 <!-- Code samples -->
