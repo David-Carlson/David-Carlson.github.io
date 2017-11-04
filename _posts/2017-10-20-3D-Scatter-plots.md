@@ -26,13 +26,13 @@ I found some <a href="https://imgur.com/a/aRBd1" target="_blank">beautiful scatt
 <!--more-->
 <!-- class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" -->
 {% assign img-class="col-lg-6 col-md-6 col-sm-6 col-xs-12" %}
-<div class="container mx-auto">
+<!-- <div class="container mx-auto"> -->
   <div class="row">
     {% for i in page.image-set %}
       {% include img-grid.html link=i.link alt=i.alt caption=i.text class=img-class %}
     {% endfor %}
   </div>
-</div>
+<!-- </div> -->
 
 Usage:  I used Python's ArgumentParser to make my tool easier to use. An example use:
 
