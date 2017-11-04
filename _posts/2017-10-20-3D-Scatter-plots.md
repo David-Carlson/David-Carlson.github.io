@@ -31,7 +31,7 @@ e.g when a point moves up, away from the blue plane, the point becomes more blue
 <!-- <div class="container mx-auto"> -->
 <div class="row">
   {% for i in page.image-set %}
-    {% include img-grid.html class=img-class link=i.link alt=i.alt caption=i.text text-link:i.text-link %}
+    {% include img-grid.html class=img-class link=i.link alt=i.alt caption=i.text %}
   {% endfor %}
 </div>
 <!-- </div> -->
