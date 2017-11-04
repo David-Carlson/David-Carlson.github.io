@@ -5,11 +5,11 @@ image: /img/blog/3DScatterPlot/goghpink.jpg
 tags: [script, python, matplotlib]
 image-set:
   - link: /img/blog/3DScatterPlot/plots/dali.jpg
-    alt: Salvador Dalí, The Persistence of Memory
+    alt: Salvador Dali, The Persistence of Memory
     text: The Persistence of Memory
   - link: /img/blog/3DScatterPlot/plots/pprint-dali.jpg
-    alt: Salvador Dalí Scatter Plot
-    text: Salvadoe Dalí
+    alt: Salvador Dali Scatter Plot
+    text: Salvadoe Dali
   - link: /img/blog/3DScatterPlot/plots/gogh.jpg
     alt: Vincent Van Gogh, "Self-Portrait"
     text: "Self-Portrait"
