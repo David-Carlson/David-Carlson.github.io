@@ -5,17 +5,21 @@ image: /img/blog/3DScatterPlot/goghpink.jpg
 tags: [script, python, matplotlib]
 image-set:
   - link: /img/blog/3DScatterPlot/plots/dali.jpg
-    alt: Salvador Dali, The Persistence of Memory
+    alt: Salvador Dalí, The Persistence of Memory
     text: The Persistence of Memory
+    text-link: https://en.wikipedia.org/wiki/The_Persistence_of_Memory
   - link: /img/blog/3DScatterPlot/plots/pprint-dali.jpg
-    alt: Salvador Dali Scatter Plot
-    text: Salvadoe Dali
+    alt: Salvador Dalí Scatter Plot
+    text: Salvador Dalí
+    text-link: https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD
   - link: /img/blog/3DScatterPlot/plots/gogh.jpg
     alt: Vincent Van Gogh, 'Self-Portrait'
     text: 'Self-Portrait'
+    text-link: http://www.vangoghgallery.com/misc/selfportrait.html
   - link: /img/blog/3DScatterPlot/plots/pprint-gogh.jpg
     alt: Van Gogh plot
     text: Vincent Van Gogh
+    text-link: https://www.biography.com/people/vincent-van-gogh-9515695
 
 excerpt_separator: <!--more-->
 ---
@@ -32,7 +36,7 @@ e.g when a point moves up, away from the blue plane, the point becomes more blue
 <!-- <div class="container mx-auto"> -->
   <div class="row">
     {% for i in page.image-set %}
-      {% include img-grid.html link=i.link alt=i.alt caption=i.text class=img-class %}
+      {% include img-grid.html class=img-class link=i.link alt=i.alt caption=i.text text-link:i.text-link %}
     {% endfor %}
   </div>
 <!-- </div> -->

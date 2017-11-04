@@ -23,9 +23,11 @@
   <!-- <a href="{{ linkurl }}">{{ include.link[0] }}</a> -->
   <div class="{{ include.class }}">
     <div class="center-block d-block">
-      <a href="{{ linkurl }}" target="_blank">
+      <a href="{{ include.link | prepend: site.baseurl | replace: '//', '/' }}" target="_blank">
         <img src="{{ include.link }}" class="img-responsive center-block" alt="{{ include.alt }}">
       </a>
-      <div class="caption">{{ include.caption }}</div>
+      <a href="{{ include.text-link }}">
+        <div>{{ include.caption }}</div>
+      </a>
     </div>
   </div>
