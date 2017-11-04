@@ -23,7 +23,7 @@ excerpt_separator: <!--more-->
 I found some <a href="https://imgur.com/a/aRBd1" target="_blank">beautiful scatter plots of famous art</a> and took it as a challenge to recreate them! I naturally turned to Matplotlib to graph the colors as 3D Positions.
 <!--more-->
 
-{% assign img-class="col-lg-3 col-md-3 col-sm-3 col-xs-12" %}
+{% assign img-class="col-sm-6 col-xs-12" %}
 <div class="container">
   <div class="row">
     {% for i in page.image-set %}
