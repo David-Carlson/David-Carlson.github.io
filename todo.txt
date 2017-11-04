@@ -3,13 +3,13 @@ Optimize images
 Minify/combine css/JS/HTML
 Remove pyments imports (use highlight.js?)
 
-
-
-Add now page
-http://nownownow.com/about
-
-Clean project links
-Add individual project pages
+LARGE:
+  Project pages for old work
+    blackbody, atmos sim
+    Now page? http://nownownow.com/about
+SMALL:
+  when small and unopened, tween parents to/from whitepaper
+  tween opened parents from white to dark gray
 
 Figure out graph visualization:
 http://sharepointoscar.com/now/
@@ -27,26 +27,8 @@ Cool 'type shit out on page'
 http://www.anudit.in/
 https://github.com/mattboldt/typed.js/
 
-Blogs:
-  Add 3D Scatter Plot
-  Display images correctly
-  Run dynamically?
-
-Compress website
-  https://alligator.io/jekyll/compress-html/
 
 Low priority:
 Disqus comments
 
 http://www.delarocque.com.br/11/home.html#mywork
-
-LARGE:
-  Finish 3d scatter plot post
-  Fix resume page (google service?)
-    <iframe src="http://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
-    but you should replace the bold URL with your own address. As I mentioned, the document viewer works for PDF and PPT files.
-  Project pages for old work
-SMALL:
-
-  when small and unopened, tween parents to/from whitepaper
-  tween opened parents from white to dark gray
