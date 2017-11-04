@@ -21,11 +21,14 @@ excerpt_separator: <!--more-->
 ---
 
 I found some <a href="https://imgur.com/a/aRBd1" target="_blank">beautiful scatter
-   plots of famous art</a> and took it as a challenge to recreate them! I naturally
-   turned to Matplotlib to graph the colors as 3D Positions.
+plots of famous art</a> and took it as a challenge to recreate them! I naturally
+turned to Matplotlib to graph the colors as 3D Positions.
 <!--more-->
+Each colored plane shows which color increases when you move away from the plane,
+e.g when a point moves up, away from the blue plane, the point becomes more blue.
+
 <!-- class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" -->
-{% assign img-class="center-block col-lg-6 col-md-6 col-sm-6 col-xs-12" %}
+{% assign img-class="col-lg-6 col-md-6 col-sm-6 col-xs-12" %}
 <!-- <div class="container mx-auto"> -->
   <div class="row">
     {% for i in page.image-set %}
