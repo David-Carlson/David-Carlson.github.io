@@ -7,19 +7,19 @@ image-set:
   - link: /img/blog/3DScatterPlot/plots/dali.jpg
     alt: Salvador Dalí, The Persistence of Memory
     text: The Persistence of Memory
-    text-link: "https://en.wikipedia.org/wiki/The_Persistence_of_Memory"
+    text-link: 'https://en.wikipedia.org/wiki/The_Persistence_of_Memory'
   - link: /img/blog/3DScatterPlot/plots/pprint-dali.jpg
     alt: Salvador Dalí Scatter Plot
     text: Salvador Dalí
-    text-link: "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD"
+    text-link: 'https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD'
   - link: /img/blog/3DScatterPlot/plots/gogh.jpg
     alt: Vincent Van Gogh, 'Self-Portrait'
     text: 'Self-Portrait'
-    text-link: "http://www.vangoghgallery.com/misc/selfportrait.html"
+    text-link: 'http://www.vangoghgallery.com/misc/selfportrait.html'
   - link: /img/blog/3DScatterPlot/plots/pprint-gogh.jpg
     alt: Van Gogh plot
     text: Vincent Van Gogh
-    text-link: "https://www.biography.com/people/vincent-van-gogh-9515695"
+    text-link: 'https://www.biography.com/people/vincent-van-gogh-9515695'
 
 excerpt_separator: <!--more-->
 ---
