@@ -4,10 +4,10 @@ title: Plotting art on a graph
 image: /img/blog/3DScatterPlot/goghpink.jpg
 tags: [script, python, matplotlib]
 image-set:
-  - link: /img/blog/3DScatterPlot/plots/pprit-dali.jpg
+  - link: /img/blog/3DScatterPlot/plots/pprint-dali.jpg
     alt: Salvadore Dali plot
     text: Salvadore Dali
-  - link: /img/blog/3DScatterPlot/plots/pprit-gogh.jpg
+  - link: /img/blog/3DScatterPlot/plots/pprint-gogh.jpg
     alt: Van Gogh plot
     text: Van Gogh
 
