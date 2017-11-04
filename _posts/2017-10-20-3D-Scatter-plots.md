@@ -11,8 +11,8 @@ image-set:
     alt: Salvador Dali Scatter Plot
     text: Salvadoe Dali
   - link: /img/blog/3DScatterPlot/plots/gogh.jpg
-    alt: Vincent Van Gogh, "Self-Portrait"
-    text: "Self-Portrait"
+    alt: Vincent Van Gogh, 'Self-Portrait'
+    text: 'Self-Portrait'
   - link: /img/blog/3DScatterPlot/plots/pprint-gogh.jpg
     alt: Van Gogh plot
     text: Vincent Van Gogh
