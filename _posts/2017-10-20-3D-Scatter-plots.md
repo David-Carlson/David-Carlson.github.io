@@ -6,20 +6,20 @@ tags: [script, python, matplotlib]
 image-set:
   - link: /img/blog/3DScatterPlot/plots/dali.jpg
     alt: Salvador Dalí, The Persistence of Memory
-    text: The Persistence of Memory
+    text: The Persistence of Memory, 1931
   - link: /img/blog/3DScatterPlot/plots/pprint-dali.jpg
     alt: Salvador Dalí Scatter Plot
     text: Salvador Dalí
   - link: /img/blog/3DScatterPlot/plots/gogh.jpg
     alt: Vincent Van Gogh, 'Self-Portrait'
-    text: 'Self-Portrait'
+    text: 'Self-Portrait', 1889
   - link: /img/blog/3DScatterPlot/plots/pprint-gogh.jpg
     alt: Van Gogh plot
     text: Vincent Van Gogh
 image-set2:
   - link: /img/blog/3DScatterPlot/plots/print-scream.jpg
     alt: 3D Plot of The Scream
-    text: Edvard Munch, The Scream
+    text: Edvard Munch, The Scream, 1893
 
 excerpt_separator: <!--more-->
 ---
