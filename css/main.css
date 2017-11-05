@@ -444,8 +444,11 @@ footer .theme-by {
   border-color: #afb1b2;
 
   vertical-align: middle;
-  line-height: 1.42857143;
+  /*line-height: 1.42857143;*/
   font-size: inherit;
+  height: 18px;
+  padding: 0 5px;
+  line-height: 18px;
 }
 
 .post-preview .post-entry {
