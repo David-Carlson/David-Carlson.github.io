@@ -447,9 +447,9 @@ footer .theme-by {
   /*line-height: 1.42857143;*/
   margin-left: 1em;
   font-size: inherit;
-  height: 18px;
   padding: 0 5px;
-  line-height: 18px;
+  line-height: 16px;
+  box-sizing: 18px;
 }
 
 .post-preview .post-entry {
