@@ -2,6 +2,7 @@
 layout: post
 title: Link Formatting Script
 image: /img/hello_world.jpg
+github: PyScripts
 tags: [script, python, regex]
 excerpt_separator: <!--more-->
 ---

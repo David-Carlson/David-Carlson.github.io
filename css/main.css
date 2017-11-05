@@ -435,6 +435,11 @@ footer .theme-by {
   font-size: 18px;
   font-style: italic;
 }
+.post-meta .github-button
+{
+  font-size: inherit;
+}
+
 .post-preview .post-entry {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
