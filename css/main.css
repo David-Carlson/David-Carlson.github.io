@@ -438,6 +438,8 @@ footer .theme-by {
 .post-meta a.btn,
 .post-heading a.btn
 {
+  vertical-align: middle;
+  line-height: 1.42857143
   font-size: inherit;
 }
 
