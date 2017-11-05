@@ -37,9 +37,10 @@
 
 		  {% if include.type == "post" %}
   		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}
-        {% if page.github %}
-        <a class="github-button" href="https://github.com/David-Carlson/{{ page.github }}" aria-label="GitHub Code">Github Code</a>
-        {% endif %}</span>
+          {% if page.github %}
+          <a class="btn" href="https://github.com/David-Carlson/{{ page.github }}" aria-label="GitHub Code">
+            <i class="fa fa-github" aria-hidden="true">Github Code</i></a>
+          {% endif %}</span>
 		  {% endif %}
         </div>
       </div>
@@ -66,7 +67,8 @@
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}
         {% if page.github %}
-        <a class="github-button" href="https://github.com/David-Carlson/{{ page.github }}" aria-label="GitHub Code">Github Code</a>
+        <a class="btn" href="https://github.com/David-Carlson/{{ page.github }}" aria-label="GitHub Code">
+          <i class="fa fa-github" aria-hidden="true">Github Code</i></a>
         {% endif %}
       </span>
 		  {% endif %}
