@@ -64,7 +64,11 @@
 		  {% endif %}
 
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}
+        {% if page.github %}
+        <a class="github-button" href="https://github.com/David-Carlson/{{ page.github }}" aria-label="GitHub Code">Github Code</a>
+        {% endif %}
+      </span>
 		  {% endif %}
         </div>
       </div>
