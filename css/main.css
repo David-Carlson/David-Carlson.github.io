@@ -435,7 +435,8 @@ footer .theme-by {
   font-size: 18px;
   font-style: italic;
 }
-.post-meta .github-button
+.post-meta a.btn,
+.post-heading a.btn
 {
   font-size: inherit;
 }
