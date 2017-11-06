@@ -55,6 +55,7 @@ author:
   github: David-Carlson    # eg. daattali
   linkedin: david-sylvernale-carlson  # eg. daattali
   telephone: +17742799701   # eg. +14159998888
+  instagram: doctorsalt
 
 # Select which links to show in the footer
 footer-links-active:
@@ -69,7 +70,7 @@ footer-links-active:
   xing: false
   stackoverflow: false
   snapchat: false
-  instagram: false
+  instagram: true
   youtube: false
   spotify: false
   telephone: false
@@ -83,7 +84,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "David-Carlson.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+# url-pretty: "David-Carlson.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
