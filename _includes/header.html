@@ -59,9 +59,9 @@
 		    {% if include.type == "page" %}
             <hr class="small">
             <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
-			{% else %}
-			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
-			{% endif %}
+			  {% else %}
+			    <h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+			  {% endif %}
 		  {% endif %}
 
 		  {% if include.type == "post" %}
