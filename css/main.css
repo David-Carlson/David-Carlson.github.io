@@ -450,7 +450,14 @@ footer .theme-by {
   padding: 0 5px;
   line-height: 16px;
   box-sizing: 18px;
+
+  color: #4E4E4E;
 }
+.post-meta a.btn:hover,
+.post-heading a.btn:hover{
+  color: #CC675B;
+}
+
 
 .post-preview .post-entry {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
