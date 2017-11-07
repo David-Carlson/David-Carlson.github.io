@@ -18,11 +18,11 @@
       <!-- {% assign linkurl = {{ i.ext-link | default: i.link}}} -->
       <div class="{{ i.class }}">
         <div class="center-block d-block">
-          <a href="{{ i.ink }}">
-            <img src="{{ include.link }}" class="img-responsive img-rounded center-block" alt="{{ include.alt }}">
+          <a href="{{ i.link }}">
+            <img src="{{ i.link }}" class="img-responsive img-rounded center-block" alt="{{ i.alt }}">
           </a>
           {% if i.caption %}
-          <div class="text-center"><em>{{ include.caption }}</em></div>
+          <div class="text-center"><em>{{ i.caption }}</em></div>
           {% endif %}
         </div>
       </div>
