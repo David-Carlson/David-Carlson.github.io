@@ -1,14 +1,5 @@
   <div class="row">
     {% for i in include.image-set %}
-        <!-- {% if i.link %}
-          {% capture linkurl %}{{i.link | prepend: site.baseurl | replace: '//', '/'}}{% endcapture %}
-        {% else %}
-          {% capture linkurl %}{{i.ext-link}}{% endcapture %}
-        {% endif %} -->
-
-        <!-- <h1>{{ linkurl}}</h1>
-        <h2>{{i.link}} link</h2>
-        <h2>{{i.ext-link}} ext-link</h2> -->
       <div class="{{ include.class }}">
         <div class="center-block d-block">
           <a href="{{ i.link }}">

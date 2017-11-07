@@ -4,7 +4,10 @@ title: Black-body Radiation Simulation
 github: BlackBody
 tags: [graphics, java, sim]
 excerpt_separator: <!--more-->
-
+heat-graph:
+  - link: https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg
+    alt: A graph showing intensity vs. wavelength
+    caption: Graph of Intensity vs. Wavelength of black-body radiation
 ---
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
@@ -17,14 +20,16 @@ and outputs the intensity. You can plot this on a graph to see what the light
 would look like. Below, each line represents the output of all wavelengths for a
 given temperature. Once this is obtained, one needs to convert it to RGB units
 to display it.
+{% include image-grid.html image-set=page.heat-graph class="col-xs-12"}
 
-<!-- https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg -->
+
 
 <!-- convert chromaticity into wiki link -->
 <!-- https://en.wikipedia.org/wiki/Chromaticity -->
 <!-- https://en.wikipedia.org/wiki/LMS_color_space -->
-I convert the spectrum graph into the intermediary XYZ Color space. XYZ is
-somewhat analogous to how the cones in human eyes work, called the
+I convert the spectrum graph into the intermediary
+<a href="https://www.youtube.com/watch?v=x0-qoXOCOow">XYZ Color space</a>.
+XYZ is somewhat analogous to how the cones in human eyes work, called the
 <a href="https://en.wikipedia.org/wiki/LMS_color_space">LMS Color Space</a>.
 The Y coordinate represents luminance, Z is "quasi-equal to blue stimulation",
 and X is effectively a combination of
