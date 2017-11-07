@@ -31,6 +31,11 @@ navbar-links:
     - Word Snack: "http://wordsnack.net/"
     - Blackbody Simulatation: "https://github.com/David-Carlson/BlackBody"
 
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
 # Color variables for CSS styling
 colors:
   gray:      '#4E4E4E'
@@ -114,7 +119,8 @@ timezone: "America/New_York"
 encoding: "utf-8"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+# permalink: /:year-:month-:day-:title/
+permalink: /blog/:title
 paginate: 5
 
 kramdown:
@@ -152,6 +158,7 @@ exclude:
   - Vagrantfile
   - todo.txt
   - _includes/blog/markdown-example.md
+  - publish.py
 
 # prose.io config
 prose:

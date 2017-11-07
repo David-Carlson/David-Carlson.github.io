@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Resume
-permalink: "/resume/"
 ---
 <div class="text-center">
     <img src="/img/blog/dataresume.jpg" class="rounded">

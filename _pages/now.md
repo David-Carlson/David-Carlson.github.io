@@ -2,7 +2,6 @@
 layout: page
 title: Now
 subtitle: David Carlson
-permalink: "/now/"
 ---
 
 I'm a programmer trying to find his path. I graduated from the University of
