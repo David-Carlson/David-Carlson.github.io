@@ -20,7 +20,7 @@ and outputs the intensity. You can plot this on a graph to see what the light
 would look like. Below, each line represents the output of all wavelengths for a
 given temperature. Once this is obtained, one needs to convert it to RGB units
 to display it.
-{% include image-grid.html image-set=page.heat-graph class="col-xs-12"}
+{% include image-grid.html image-set=page.heat-graph class="col-xs-12" %}
 
 
 
@@ -36,6 +36,3 @@ and X is effectively a combination of
 
 <!-- TODO ADD an inline link include -->
 <!-- TODO Reformulate my picture format script -->
-
-
-NEW NEW NEW NEW
