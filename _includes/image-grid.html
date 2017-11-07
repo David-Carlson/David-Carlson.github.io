@@ -1,0 +1,30 @@
+
+     <!-- <h1 class="my-4 text-center text-lg-left">Thumbnail Gallery</h1> -->
+
+  <!-- <div class="row text-center text-lg-left">
+    <a href="#" class="d-block mb-4 h-100">
+      <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
+    </a>
+  </div> -->
+  <!-- <a href="{{ linkurl }}">{{ include.link[0] }}</a> -->
+
+  <div class="row">
+    {% for i in include.image-set %}
+      <!-- {% if i.ext-link %}
+        {% assign linkurl = i.ext-link%}
+      {% elsif i.link %}
+        { % assign linkurl = i.link %} -->
+      {% assign i.link = {{i.link | prepend: site.baseurl | replace: '//', '/'}} %}
+      <!-- {% assign linkurl = {{ i.ext-link | default: i.link}}} -->
+      <div class="{{ i.class }}">
+        <div class="center-block d-block">
+          <a href="{{ i.ink }}">
+            <img src="{{ include.link }}" class="img-responsive img-rounded center-block" alt="{{ include.alt }}">
+          </a>
+          {% if i.caption %}
+          <div class="text-center"><em>{{ include.caption }}</em></div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>

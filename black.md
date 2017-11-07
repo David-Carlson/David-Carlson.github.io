@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
 simulates the light that hot objects give off - black-body radiation.
-This is the reason that hot stoves are red and stars are light blue.
+This effect causeshot stoves to be red and stars to look whitish-blue.
 <!--more-->
 
 The heart of the algorithm is a function that takes a temperature and a wavelength
@@ -24,7 +24,7 @@ to display it.
 <!-- https://en.wikipedia.org/wiki/LMS_color_space -->
 I convert the spectrum graph into the intermediary XYZ Color space. XYZ is
 somewhat analogous to how the cones in human eyes work, called the
-<a href="https://en.wikipedia.org/wiki/LMS_color_space" target="_blank">LMS Color Space</a>. 
+<a href="https://en.wikipedia.org/wiki/LMS_color_space">LMS Color Space</a>.
 The Y coordinate represents luminance, Z is "quasi-equal to blue stimulation",
 and X is effectively a combination of
 
