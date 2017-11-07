@@ -35,6 +35,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  wip:
+    output: true
+    permalink: /wip/:path/
 
 # Color variables for CSS styling
 colors:
