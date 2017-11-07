@@ -14,12 +14,18 @@
         {% assign linkurl = i.ext-link%}
       {% elsif i.link %}
         { % assign linkurl = i.link %} -->
-      {% assign i.link = {{i.link | prepend: site.baseurl | replace: '//', '/'}} %}
+        {% if i.link %}
+          {% capture linkurl %}{{i.link | prepend: site.baseurl | replace: '//', '/'}}{% endcapture %}
+        {% elif i.ext-link %}
+          {% capture linkurl %}{{i.ext-link}}{% endcapture %}
+        {% else %}
+          {% capture linkurl %}{"/img/404-southpark.jpg" | prepend: site.baseurl | replace: '//', '/'}}{% endcapture %}
+        {% endif %}
       <!-- {% assign linkurl = {{ i.ext-link | default: i.link}}} -->
       <div class="{{ i.class }}">
         <div class="center-block d-block">
-          <a href="{{ i.link }}">
-            <img src="{{ i.link }}" class="img-responsive img-rounded center-block" alt="{{ i.alt }}">
+          <a href="{{ linkurl }}">
+            <img src="{{ linkurl }}" class="img-responsive img-rounded center-block" alt="{{ i.alt }}">
           </a>
           {% if i.caption %}
           <div class="text-center"><em>{{ i.caption }}</em></div>
