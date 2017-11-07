@@ -1,28 +1,12 @@
-
-     <!-- <h1 class="my-4 text-center text-lg-left">Thumbnail Gallery</h1> -->
-
-  <!-- <div class="row text-center text-lg-left">
-    <a href="#" class="d-block mb-4 h-100">
-      <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-    </a>
-  </div> -->
-  <!-- <a href="{{ linkurl }}">{{ include.link[0] }}</a> -->
-
   <div class="row">
     {% for i in include.image-set %}
-      <!-- {% if i.ext-link %}
-        {% assign linkurl = i.ext-link%}
-      {% elsif i.link %}
-        { % assign linkurl = i.link %} -->
         {% if i.link %}
           {% capture linkurl %}{{i.link | prepend: site.baseurl | replace: '//', '/'}}{% endcapture %}
-        {% elif i.ext-link %}
-          {% capture linkurl %}{{i.ext-link}}{% endcapture %}
         {% else %}
-          {% capture linkurl %}{"/img/404-southpark.jpg" | prepend: site.baseurl | replace: '//', '/'}}{% endcapture %}
+          {% capture linkurl %}{{i.ext-link}}{% endcapture %}
         {% endif %}
-      <!-- {% assign linkurl = {{ i.ext-link | default: i.link}}} -->
-      <div class="{{ i.class }}">
+        <h1>{{ linkurl}}</h1>
+      <!-- <div class="{{ i.class }}">
         <div class="center-block d-block">
           <a href="{{ linkurl }}">
             <img src="{{ linkurl }}" class="img-responsive img-rounded center-block" alt="{{ i.alt }}">
@@ -31,6 +15,6 @@
           <div class="text-center"><em>{{ i.caption }}</em></div>
           {% endif %}
         </div>
-      </div>
+      </div> -->
     {% endfor %}
   </div>

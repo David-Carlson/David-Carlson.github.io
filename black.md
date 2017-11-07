@@ -4,6 +4,7 @@ title: Black-body Radiation Simulation
 github: BlackBody
 tags: [graphics, java, sim]
 excerpt_separator: <!--more-->
+
 ---
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
