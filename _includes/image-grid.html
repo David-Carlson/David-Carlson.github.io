@@ -5,7 +5,10 @@
         {% else %}
           {% capture linkurl %}{{i.ext-link}}{% endcapture %}
         {% endif %}
+
         <h1>{{ linkurl}}</h1>
+        <h2>{{i.link}} link</h2>
+        <h2>{{i.ext-link}} ext-link</h2>
       <!-- <div class="{{ i.class }}">
         <div class="center-block d-block">
           <a href="{{ linkurl }}">
