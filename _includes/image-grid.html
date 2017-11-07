@@ -1,23 +1,23 @@
   <div class="row">
     {% for i in include.image-set %}
-        {% if i.link %}
+        <!-- {% if i.link %}
           {% capture linkurl %}{{i.link | prepend: site.baseurl | replace: '//', '/'}}{% endcapture %}
         {% else %}
           {% capture linkurl %}{{i.ext-link}}{% endcapture %}
-        {% endif %}
+        {% endif %} -->
 
-        <h1>{{ linkurl}}</h1>
+        <!-- <h1>{{ linkurl}}</h1>
         <h2>{{i.link}} link</h2>
-        <h2>{{i.ext-link}} ext-link</h2>
-      <!-- <div class="{{ i.class }}">
+        <h2>{{i.ext-link}} ext-link</h2> -->
+      <div class="{{ i.class }}">
         <div class="center-block d-block">
-          <a href="{{ linkurl }}">
-            <img src="{{ linkurl }}" class="img-responsive img-rounded center-block" alt="{{ i.alt }}">
+          <a href="{{ i.link }}">
+            <img src="{{ i.link }}" class="img-responsive img-rounded center-block" alt="{{ i.alt }}">
           </a>
           {% if i.caption %}
           <div class="text-center"><em>{{ i.caption }}</em></div>
           {% endif %}
         </div>
-      </div> -->
+      </div>
     {% endfor %}
   </div>

@@ -14,7 +14,7 @@ image-set:
   - link: /img/blog/3DScatterPlot/plots/gogh.jpg
     alt: Vincent Van Gogh, 'Self-Portrait'
     caption: "'Self-Portrait', 1889"
-  - ext-link: google.com/img/blog/3DScatterPlot/plots/pprint-gogh.jpg
+  - link: google.com/img/blog/3DScatterPlot/plots/pprint-gogh.jpg
     alt: Van Gogh plot
     caption: Vincent Van Gogh
 image-set2:
