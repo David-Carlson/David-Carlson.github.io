@@ -39,5 +39,5 @@ formats for the links, including HTML anchor tags, markdown format, and the
 currently shown format where urls are tabbed in. This was because pastebin
 wouldn't accept links with alternate text.
 ```python
-{% include assets/ProcessRedditLinks.py %}
+{% include blog/ProcessRedditLinks.py %}
 ```

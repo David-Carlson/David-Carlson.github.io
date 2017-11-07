@@ -47,7 +47,7 @@ It also uses other optional flags such as --save to save the plotted images and
 --nodisplay, which runs the program without drawing to the screen.
 
 Here's an example without pretty-print turned on:
-{% include img-grid.html image-set:page.scream class="col-xs-12" %}
+{% include img-grid.html image-set=page.scream class="col-xs-12" %}
 
 
 <!-- Code samples -->

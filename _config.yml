@@ -151,7 +151,7 @@ exclude:
   - README.md
   - Vagrantfile
   - todo.txt
-  - _includes/assets/markdown-example.md
+  - _includes/blog/markdown-example.md
 
 # prose.io config
 prose:
