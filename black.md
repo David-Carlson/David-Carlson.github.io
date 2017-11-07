@@ -6,10 +6,13 @@ tags: [graphics, java, sim]
 excerpt_separator: <!--more-->
 ---
 
-With the help of a friend, Seán Ceallaigh, we built a graphics shader that simulates the light that hot objects give off - black-body radiation.  This is the reason that hot stoves are red and stars are light blue.
+With the help of a friend, Seán Ceallaigh, we built a graphics shader that
+simulates the light that hot objects give off - black-body radiation.
+This is the reason that hot stoves are red and stars are light blue.
 <!--more-->
 
-The heart of the algorithm is a function that takes a temperature and a wavelength and outputs the intensity. You can plot this on a graph to see what the light
+The heart of the algorithm is a function that takes a temperature and a wavelength
+and outputs the intensity. You can plot this on a graph to see what the light
 would look like. Below, each line represents the output of all wavelengths for a
 given temperature. Once this is obtained, one needs to convert it to RGB units
 to display it.
@@ -19,8 +22,11 @@ to display it.
 <!-- convert chromaticity into wiki link -->
 <!-- https://en.wikipedia.org/wiki/Chromaticity -->
 <!-- https://en.wikipedia.org/wiki/LMS_color_space -->
-I convert the spectrum graph into the intermediary XYZ Color space. XYZ is somewhat analogous to how the cones in human eyes work, called the LMS Color Space. The Y coordinate represents luminance,
-Z is "quasi-equal to blue stimulation", and X is effectively a combination of
+I convert the spectrum graph into the intermediary XYZ Color space. XYZ is
+somewhat analogous to how the cones in human eyes work, called the
+<a href="https://en.wikipedia.org/wiki/LMS_color_space" target="_blank">LMS Color Space</a>. 
+The Y coordinate represents luminance, Z is "quasi-equal to blue stimulation",
+and X is effectively a combination of
 
 <!-- TODO ADD an inline link include -->
 <!-- TODO Reformulate my picture format script -->
