@@ -34,7 +34,7 @@ e.g when a point moves up, away from the blue plane, the point becomes more blue
 
 <!-- class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" -->
 {% assign img-class="col-lg-6 col-md-6 col-sm-6 col-xs-12" %}
-{% include image-grid.html image-set=page.imageset class=img-class%}
+{% include image-grid.html image-set=page.image-set class=img-class%}
 
 Usage:  I used Python's ArgumentParser to make my tool easier to use. An example use:
 
