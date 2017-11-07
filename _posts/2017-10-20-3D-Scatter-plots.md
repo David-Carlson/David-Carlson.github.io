@@ -17,7 +17,7 @@ image-set:
   - link: google.com/img/blog/3DScatterPlot/plots/pprint-gogh.jpg
     alt: Van Gogh plot
     caption: Vincent Van Gogh
-image-set2:
+scream:
   - link: /img/blog/3DScatterPlot/plots/print-scream.jpg
     alt: 3D Plot of The Scream
     caption: "Edvard Munch, The Scream, 1893"
@@ -47,10 +47,7 @@ It also uses other optional flags such as --save to save the plotted images and
 --nodisplay, which runs the program without drawing to the screen.
 
 Here's an example without pretty-print turned on:
-<div class="row">
-  {% for i in page.image-set2 %}
-    {% include img-grid.html class="col-xs-12" link=i.link alt=i.alt caption=i.text %}
-  {% endfor %}
-</div>
+{% include img-grid.html image-set:page.scream class="col-xs-12" %}
+
 
 <!-- Code samples -->
