@@ -125,9 +125,11 @@ highlighter: rouge
 # permalink: /:year-:month-:day-:title/
 permalink: /blog/:title
 paginate: 5
-
 kramdown:
   input: GFM
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
