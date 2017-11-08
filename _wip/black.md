@@ -29,4 +29,3 @@ Changing from XYZ to RGB is a simple coordinate change which can be done with ma
 
 
 <!-- TODO ADD an inline link include -->
-<!-- TODO Reformulate my picture format script -->

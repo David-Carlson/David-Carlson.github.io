@@ -21,8 +21,8 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
 
-
-  {% include gtm_head.html %}
+  <!-- TODO Add this back in if I need GTM google tag mananager analytics -->
+  <!-- {% include gtm_head.html %} -->
 
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
@@ -36,6 +36,13 @@
     {% endfor %}
   {% endif %}
 
+  <style type="text/css">
+    {% capture include_to_scssify %}
+      {% include main.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+  </style>
+
   {% if layout.common-googlefonts %}
     {% for font in layout.common-googlefonts %}
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
@@ -48,12 +55,7 @@
     {% endfor %}
   {% endif %}
 
-  <style type="text/css">
-    {% capture include_to_scssify %}
-      {% include main.scss %}
-    {% endcapture %}
-    {{ include_to_scssify | scssify }}
-  </style>
+
 
   {% if page.css %}
     {% for css in page.css %}

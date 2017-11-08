@@ -32,3 +32,8 @@ Low priority:
 Disqus comments
 
 http://www.delarocque.com.br/11/home.html#mywork
+
+////////////////////////////////////////////////////////////////
+DONE
+
+Compression changed 22.2 KB index into 19.8 (10% reduction)
