@@ -12,6 +12,10 @@ scale:
   - link: /img/blog/blackbody/scale.jpg
     alt: Three hot spheres emitting their predicted color
     caption: Three hot spheres emitting their predicted color
+bright:
+  - link: /img/blog/blackbody/bright.jpg
+    alt: Sphere light scaled to reasonable bounds
+    caption: Energy normalized
 ---
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
@@ -37,6 +41,11 @@ tracer to have a temperature and our corresponding black-body shader. Here
 are the initial results:
 {% include image-grid.html image-set=page.scale class="col=xs-12" %}
 As you can see, each sphere has the correct hue as they increase in temperature.
+We quickly realized that our equation has a flaw; As temperature doubles, the
+energy emitted goes up 16 fold! This meant that the image was nigh-impossible
+to expose with our virtual cameras. We ended up using a mixture of HDR and scaling
+the intensity of light to reasonable bounds.
+{% include image-grid.html image-set=page.bright class="col-xs-12" %}
 
 
 
