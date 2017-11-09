@@ -35,7 +35,7 @@ Changing from XYZ to RGB is a simple coordinate change which can be done with ma
 Finally, after implementing all this magic, we allowed any object in our ray
 tracer to have a temperature and our corresponding black-body shader. Here
 are the initial results:
-{% include image-grid.html image-set=page.scale class="col=xs-12"}
+{% include image-grid.html image-set=page.scale class="col=xs-12" %}
 As you can see, each sphere has the correct hue as they increase in temperature.
 
 
