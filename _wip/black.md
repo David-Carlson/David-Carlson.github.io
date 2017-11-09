@@ -8,13 +8,17 @@ heat-graph:
   - link: https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg
     alt: A graph showing intensity vs. wavelength
     caption: Graph of Intensity vs. Wavelength of black-body radiation
+scale:
+  - link: /img/blog/blackbody/scale.jpg
+    alt: Three hot spheres emitting their predicted color
+    caption: Three hot spheres emitting their predicted color
 ---
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
 simulates the light that hot objects give off - black-body radiation.
 This effect causeshot stoves to be red and stars to look whitish-blue.
 <!--more-->
-** The Science behind it
+## The Science behind it
 The heart of the algorithm is a function that takes a temperature and a wavelength
 and outputs the intensity. You can plot this on a graph to see what the light
 would look like. Below, each line represents the output of all wavelengths for a
@@ -26,6 +30,14 @@ I convert the spectrum graph into the intermediary
 XYZ is somewhat analogous to how the cones in human eyes work, called the
 <a href="https://en.wikipedia.org/wiki/LMS_color_space">LMS Color Space</a>.
 Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
+
+## Show me the money
+Finally, after implementing all this magic, we allowed any object in our ray
+tracer to have a temperature and our corresponding black-body shader. Here
+are the initial results:
+{% include image-grid.html image-set=page.scale class="col=xs-12"}
+As you can see, each sphere has the correct hue as they increase in temperature.
+
 
 
 <!-- TODO ADD an inline link include -->

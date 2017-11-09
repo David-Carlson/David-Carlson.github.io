@@ -1,5 +1,20 @@
 /*@import url("pygment_highlights.css");*/
-// Break up file into scss imports 
+// Break up file into scss imports
+
+/*
+@import "normalize";
+@import "fonts";
+
+@import "mixins";
+@import "base";
+@import "type";
+@import "article";
+@import "header";
+@import "footer";
+@import "video";
+
+@import "todo"; //junk file for later placement
+*/
 /* --- General --- */
 
 body#whitepaper {
