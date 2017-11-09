@@ -23,6 +23,7 @@ dinos:
   - link: /img/blog/blackbody/blue.jpg
     alt: A blue velociraptor
 ---
+<!-- TODO Add in latex? https://www.e-education.psu.edu/astro801/content/l3_p5.html -->
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
 simulates the light that hot objects give off - black-body radiation.
