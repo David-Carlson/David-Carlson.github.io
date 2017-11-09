@@ -55,7 +55,7 @@ the intensity of light to reasonable bounds.
 Lastly, we wanted to see what our shaders would do when using impossible
 physical constants, as well as other changes. This resulted in some crazy
 renders!
-{% include image-grid.html image-set=}
+{% include image-grid.html image-set=page.dinos class="col-md-6 col-xs-12" %}
 
 
 
