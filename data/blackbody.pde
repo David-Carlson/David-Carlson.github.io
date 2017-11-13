@@ -1,5 +1,6 @@
 void setup() {
   size(400, 400);
+  frameRate(15);
 }
 // Used to only draw on changed temperatures
 var keepLastFrame = false;
