@@ -22,14 +22,22 @@ dinos:
     alt: A purple velociraptor
   - link: /img/blog/blackbody/blue.jpg
     alt: A blue velociraptor
+p5:
+  - p5
+sketches:
+  - setup_p5
 ---
-<!-- TODO Add in latex? https://www.e-education.psu.edu/astro801/content/l3_p5.html -->
-<!-- TODO!!!!! Add in interactive ProcessingJS -->
+<!-- - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.js" -->
+<!-- ext-js:
+  - "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.min.js"
+ext-css:
+  - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" -->
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
 simulates the light that hot objects give off - black-body radiation.
 This effect causeshot stoves to be red and stars to look whitish-blue.
 <!--more-->
+
 ## The Science behind it
 The heart of the algorithm is a function that takes a temperature and a wavelength
 and outputs the intensity. You can plot this on a graph to see what the light
@@ -42,6 +50,10 @@ I convert the spectrum graph into the intermediary
 XYZ is somewhat analogous to how the cones in human eyes work, called the
 <a href="https://en.wikipedia.org/wiki/LMS_color_space">LMS Color Space</a>.
 Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
+
+# An example in 5 seconds
+<div id="setup_p5_sketch" style="height: 300px; position: relative;"></div>
+
 
 ## Show me the money
 Finally, after implementing all this magic, we allowed any object in our ray

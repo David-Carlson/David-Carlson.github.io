@@ -5,10 +5,6 @@ image: /img/blog/blackbody/mainroo.jpg
 github: BlackBody
 tags: [graphics, java, sim]
 excerpt_separator: <!--more-->
-ext-js:
-  - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.js"
-ext-css:
-  - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"
 heat-graph:
   - link: https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg
     alt: A graph showing intensity vs. wavelength
@@ -27,6 +23,11 @@ dinos:
   - link: /img/blog/blackbody/blue.jpg
     alt: A blue velociraptor
 ---
+<!-- - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.js" -->
+<!-- ext-js:
+  - "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.min.js"
+ext-css:
+  - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" -->
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
 simulates the light that hot objects give off - black-body radiation.
