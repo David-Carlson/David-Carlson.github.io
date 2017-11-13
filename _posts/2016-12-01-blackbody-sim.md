@@ -5,6 +5,10 @@ image: /img/blog/blackbody/mainroo.jpg
 github: BlackBody
 tags: [graphics, java, sim]
 excerpt_separator: <!--more-->
+ext-js:
+  - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.js"
+ext-css:
+  - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"
 heat-graph:
   - link: https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg
     alt: A graph showing intensity vs. wavelength
@@ -28,6 +32,7 @@ With the help of a friend, Seán Ceallaigh, we built a graphics shader that
 simulates the light that hot objects give off - black-body radiation.
 This effect causeshot stoves to be red and stars to look whitish-blue.
 <!--more-->
+
 ## The Science behind it
 The heart of the algorithm is a function that takes a temperature and a wavelength
 and outputs the intensity. You can plot this on a graph to see what the light
@@ -40,6 +45,14 @@ I convert the spectrum graph into the intermediary
 XYZ is somewhat analogous to how the cones in human eyes work, called the
 <a href="https://en.wikipedia.org/wiki/LMS_color_space">LMS Color Space</a>.
 Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
+
+# An example in 5 seconds
+<div class="row">
+  <div class="col-xs-12">
+    <canvas data-processing-sources="data/blackbody.pde"></canvas>
+  </div>
+</div>
+
 
 ## Show me the money
 Finally, after implementing all this magic, we allowed any object in our ray
