@@ -50,8 +50,7 @@ Changing from XYZ to RGB is a simple coordinate change which can be done with ma
 <div class="row">
   <div class="col-xs-12">
 
-    <canvas data-processing-sources="{{ site.baseurl }}/data/blackbody.pde"
-      width="400" height="400"></canvas>
+    <canvas data-processing-sources="{{ site.baseurl }}/data/blackbody.pde"></canvas>
   </div>
 </div>
 
