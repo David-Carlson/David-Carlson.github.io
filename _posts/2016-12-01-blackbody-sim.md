@@ -47,18 +47,6 @@ XYZ is somewhat analogous to how the cones in human eyes work, called the
 Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
 
 # An example in 5 seconds
-<!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<div class="row">
-  <div class="col-xs-12">
-    <canvas id="blackbody-canvas" data-processing-sources="{{ site.baseurl }}/data/blackbody.pde">
-      <p>Please upgrade your browser to something newer, like <a href="http://chrome.google.com" target="_blank">Google Chrome</a></p>
-    </canvas>
-
-  </div>
-</div>
-
 
 ## Show me the money
 Finally, after implementing all this magic, we allowed any object in our ray
