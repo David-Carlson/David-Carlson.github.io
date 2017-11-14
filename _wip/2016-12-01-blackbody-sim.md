@@ -25,7 +25,7 @@ dinos:
 p5:
   - p5
 sketches:
-  - setup_p5
+  - setup
 ---
 <!-- - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.js" -->
 <!-- ext-js:
@@ -52,7 +52,7 @@ XYZ is somewhat analogous to how the cones in human eyes work, called the
 Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
 
 # An example in 5 seconds
-<div id="setup_p5_sketch" style="height: 300px; position: relative;"></div>
+<div id="setup_p5_sketch" style="height: 400px; position: relative;"></div>
 
 
 ## Show me the money
