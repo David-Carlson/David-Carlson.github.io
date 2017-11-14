@@ -92,7 +92,7 @@ var Spectrum = function() {
     this.wavelengthMax = 860;
     // deltaWavelength, used in integration
     this.wavelengthStep = (this.wavelengthMax-this.wavelengthMin) / CIE_xbar.length;
-    this.tempColor = color(0, 0, 0);
+    this.tempColor;
 
     // A coordinate matrix to convert from xyz to RGB
     this.rx = 0.41847;
@@ -177,6 +177,76 @@ var Spectrum = function() {
     };
 };
 var spectrum = new Spectrum();
+////////////////////////////////////////////////////////////////////////////////
+// Draws the power of each wavelength for a given temperature
+var Graph = function() {
+    this.pos;
+    this.width = 283; this.height = 162;
+    // Used to scale graph bounds
+    this.maxLambda = 3000; this.maxPower = 10e12;
+    // Accounts for graph accuracy.
+    this.stepTotal = 33; this.stepSize = this.maxLambda / this.stepTotal;
+    this.convertRange = function(val, max, newMax) {
+        return val/max * newMax;
+    };
+
+    this.draw = function() {
+        // Draw the Spectral power function
+        stroke(spectrum.tempColor);
+        strokeWeight(2);
+        var temp = slider.value;
+        var skippedLine = false;
+        for (var i = 0, w = 10; i < this.stepTotal; i++, w += this.stepSize) {
+
+            var I = spectrum.getIntensity(w, temp);
+            var I2 = spectrum.getIntensity(w+this.stepSize, temp);
+            if (I > this.maxPower*2 || I2 > this.maxPower*2) {
+                if (skippedLine) {
+                    continue;
+                }
+                else {
+                    skippedLine = true;
+                }
+            }
+
+            var x1 = this.pos.x + this.convertRange(i, this.stepTotal, this.width);
+            var y1 = this.pos.y - this.convertRange(I, this.maxPower, this.height);
+
+
+            var x2 = this.pos.x + this.convertRange(i+1, this.stepTotal, this.width);
+            var y2 = this.pos.y - this.convertRange(I2, this.maxPower, this.height);
+
+            line(x1,y1, x2, y2);
+        }
+        // Draw the Axes' labels
+        strokeWeight(2);
+        fill(255, 255, 255);
+        text("Wavelength λ - (nm)", this.pos.x + 81, this.pos.y+22);
+        text(this.maxLambda + " nm", this.pos.x + 241, this.pos.y+22);
+        pushMatrix();
+        rotate(-90);
+        text("Spectral Radiance", -this.pos.y+30, 43);
+        popMatrix();
+        text(this.maxPower.toPrecision(1), this.pos.x +-45, this.pos.y -this.height+8);
+        // Draw the visible wavelength lines
+        strokeWeight(1);
+        stroke(191, 0, 255);
+        var visibleX1 = this.convertRange(spectrum.wavelengthMin, 3000,this.width);
+        var visibleX2 = this.convertRange(spectrum.wavelengthMax, 3000,this.width);
+        line(this.pos.x+visibleX1, this.pos.y, this.pos.x+visibleX1, this.pos.y-this.height);
+        stroke(255, 0, 0);
+        line(this.pos.x+visibleX2, this.pos.y, this.pos.x+visibleX2, this.pos.y-this.height);
+        fill(13, 255, 243);
+        text("Visible range", this.pos.x+24, this.pos.y-this.height+-5);
+
+        // Draw Axes
+        stroke(255, 255, 255);
+        strokeWeight(4);
+        line(this.pos.x, this.pos.y, this.pos.x, this.pos.y-this.height);
+        line(this.pos.x, this.pos.y, this.pos.x+this.width, this.pos.y);
+    };
+};
+var graph = new Graph();
 
 function setup() {
   // find the size of the underlying div
@@ -184,6 +254,8 @@ function setup() {
   var divHeight = $("#setup_p5_sketch").height();
   var myCanvas = createCanvas(divWidth, divHeight);
   myCanvas.parent('setup_p5_sketch');
+  spectrum.tempColor = color(0, 0, 0);
+  graph.pos = new PVector(66, 272);
 }
 
 // when the window is resized the canvas is resized accordingly
@@ -284,76 +356,7 @@ var drawBar = function() {
     quad(xpos, ypos, xpos+xdiff, ypos+ydiff, xpos+xdiff, ypos+ydiff+height, xpos, ypos+height);
 };
 
-////////////////////////////////////////////////////////////////////////////////
-// Draws the power of each wavelength for a given temperature
-var Graph = function() {
-    this.pos = new PVector(66, 272);
-    this.width = 283; this.height = 162;
-    // Used to scale graph bounds
-    this.maxLambda = 3000; this.maxPower = 10e12;
-    // Accounts for graph accuracy.
-    this.stepTotal = 33; this.stepSize = this.maxLambda / this.stepTotal;
-    this.convertRange = function(val, max, newMax) {
-        return val/max * newMax;
-    };
 
-    this.draw = function() {
-        // Draw the Spectral power function
-        stroke(spectrum.tempColor);
-        strokeWeight(2);
-        var temp = slider.value;
-        var skippedLine = false;
-        for (var i = 0, w = 10; i < this.stepTotal; i++, w += this.stepSize) {
-
-            var I = spectrum.getIntensity(w, temp);
-            var I2 = spectrum.getIntensity(w+this.stepSize, temp);
-            if (I > this.maxPower*2 || I2 > this.maxPower*2) {
-                if (skippedLine) {
-                    continue;
-                }
-                else {
-                    skippedLine = true;
-                }
-            }
-
-            var x1 = this.pos.x + this.convertRange(i, this.stepTotal, this.width);
-            var y1 = this.pos.y - this.convertRange(I, this.maxPower, this.height);
-
-
-            var x2 = this.pos.x + this.convertRange(i+1, this.stepTotal, this.width);
-            var y2 = this.pos.y - this.convertRange(I2, this.maxPower, this.height);
-
-            line(x1,y1, x2, y2);
-        }
-        // Draw the Axes' labels
-        strokeWeight(2);
-        fill(255, 255, 255);
-        text("Wavelength λ - (nm)", this.pos.x + 81, this.pos.y+22);
-        text(this.maxLambda + " nm", this.pos.x + 241, this.pos.y+22);
-        pushMatrix();
-        rotate(-90);
-        text("Spectral Radiance", -this.pos.y+30, 43);
-        popMatrix();
-        text(this.maxPower.toPrecision(1), this.pos.x +-45, this.pos.y -this.height+8);
-        // Draw the visible wavelength lines
-        strokeWeight(1);
-        stroke(191, 0, 255);
-        var visibleX1 = this.convertRange(spectrum.wavelengthMin, 3000,this.width);
-        var visibleX2 = this.convertRange(spectrum.wavelengthMax, 3000,this.width);
-        line(this.pos.x+visibleX1, this.pos.y, this.pos.x+visibleX1, this.pos.y-this.height);
-        stroke(255, 0, 0);
-        line(this.pos.x+visibleX2, this.pos.y, this.pos.x+visibleX2, this.pos.y-this.height);
-        fill(13, 255, 243);
-        text("Visible range", this.pos.x+24, this.pos.y-this.height+-5);
-
-        // Draw Axes
-        stroke(255, 255, 255);
-        strokeWeight(4);
-        line(this.pos.x, this.pos.y, this.pos.x, this.pos.y-this.height);
-        line(this.pos.x, this.pos.y, this.pos.x+this.width, this.pos.y);
-    };
-};
-var graph = new Graph();
 ////////////////////////////////////////////////////////////////////////////////
 draw = function() {
     if(!keepLastFrame) {
