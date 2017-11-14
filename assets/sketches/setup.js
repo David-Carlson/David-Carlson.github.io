@@ -1,7 +1,9 @@
 "use strict";
 new p5();
 
-tempColor;
+var tempColor;
+// Used to only draw on changed temperatures
+var keepLastFrame = false;
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -279,9 +281,6 @@ function windowResized(){
   resizeCanvas(divWidth, divHeight);
 }
 
-
-// Used to only draw on changed temperatures
-var keepLastFrame = false;
 
 ////////////////////////////////////////////////////////////////////////////////
 // Encapsulates the slider, which stores a value between the min/max allowed.
