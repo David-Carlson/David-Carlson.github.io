@@ -82,100 +82,6 @@ var CIE_zbar = [ 0.000606100000, 0.001086000000,
                 0.000000000000, 0.000000000000, 0.000000000000, 0.000000000000,
                 0.000000000000, 0.000000000000, 0.000000000000, 0.000000000000,
                 0.000000000000];
-
-var x = 100,
-  y = 100,
-  angle1 = 0.0,
-  segLength = 50;
-
-function setup() {
-  // find the size of the underlying div
-  var divWidth = $("#setup_p5_sketch").width();
-  var divHeight = $("#setup_p5_sketch").height();
-  var myCanvas = createCanvas(divWidth, divHeight);
-  myCanvas.parent('setup_p5_sketch');
-  // strokeWeight(20.0);
-  // stroke(0, 100);
-}
-
-// when the window is resized the canvas is resized accordingly
-function windowResized(){
-  var divWidth = $("#setup_p5_sketch").width();
-  var divHeight = $("#setup_p5_sketch").height();
-  resizeCanvas(divWidth, divHeight);
-}
-
-
-// Used to only draw on changed temperatures
-var keepLastFrame = false;
-
-////////////////////////////////////////////////////////////////////////////////
-// Encapsulates the slider, which stores a value between the min/max allowed.
-var Slider = function (){
-    // Positioning data
-    this.leftX = 40;
-    this.rightX = 366;
-    this.topY = 20;
-    this.botY = 46;
-    this.sliderPos = (this.leftX+this.rightX)/2;
-    // Change of values and stored value
-    this.minVal = 10;
-    this.maxVal = 7000;
-    this.value = (this.maxVal+this.minVal)/2;
-    this.percent = 50;
-    this.draw = function(tempColor) {
-        stroke(250, 250, 250);
-        strokeWeight(2);
-        var y = (this.topY + this.botY)/2;
-        line(this.leftX,y, this.rightX, y);
-
-        fill(tempColor);
-        ellipse(this.sliderPos, y, 15, 15);
-
-        fill(255, 255, 255);
-        text(this.minVal + " Kelvin", this.leftX-1, this.botY+10);
-        text(this.maxVal + " Kelvin", this.rightX-61, this.botY +10);
-        text("Temperature: " + this.value.toPrecision(4) + " degrees Kelvin", this.leftX + 76, this.topY);
-    };
-    // Calculates the temperature based on the percent through sliding
-    this.calculateValue = function() {
-        this.percent = (this.sliderPos - this.leftX)/(this.rightX - this.leftX);
-        this.value = (1 - this.percent) * this.minVal + this.percent * this.maxVal;
-    };
-
-    // Checks if the slider was pressed. If so, gets temperature and returns true
-    this.sliderClicked = function() {
-        if(mouseX > this.leftX && mouseX < this.rightX && mouseY > this.topY && mouseY < this.botY) {
-            this.sliderPos = mouseX;
-            this.calculateValue();
-            return true;
-        }
-        else {
-            return false;
-        }
-    };
-};
-var slider = new Slider();
-////////////////////////////////////////////////////////////////////////////////
-
-// This scales the luminance to roughly mimic actual brightness without extreme
-// gamma correction. Below min temp it scales to black, above max temp it scales
-// to max brightness without affecting hue. Between those values it uses a parabola
-// to find a scale value from 0-1
-var parabolicScale = function(temp, min, max) {
-    if(temp < min) {
-        return 0;
-    }
-    else if(temp > max) {
-        return 1;
-    }
-    else {
-        // Values found using wolfram Alpha
-        var A = 4.8902e-7;var B = -0.000753;var C = 0.2899;
-        return A*pow(temp,2) + B*temp + C;
-    }
-};
-
 ////////////////////////////////////////////////////////////////////////////////
 // Turns a spectrum of electromagnetic radiation into scaled RGB values
 var Spectrum = function() {
@@ -184,7 +90,7 @@ var Spectrum = function() {
     this.wavelengthMax = 860;
     // deltaWavelength, used in integration
     this.wavelengthStep = (this.wavelengthMax-this.wavelengthMin) / CIE_xbar.length;
-    this.tempColor = color(0,0,0);
+    this.tempColor;
 
     // A coordinate matrix to convert from xyz to RGB
     this.rx = 0.41847;
@@ -269,6 +175,93 @@ var Spectrum = function() {
     };
 };
 var spectrum = new Spectrum();
+
+function setup() {
+  // find the size of the underlying div
+  var divWidth = $("#setup_p5_sketch").width();
+  var divHeight = $("#setup_p5_sketch").height();
+  var myCanvas = createCanvas(divWidth, divHeight);
+  myCanvas.parent('setup_p5_sketch');
+  spectrum.tempColor = color(0, 0, 0);
+}
+
+// when the window is resized the canvas is resized accordingly
+function windowResized(){
+  var divWidth = $("#setup_p5_sketch").width();
+  var divHeight = $("#setup_p5_sketch").height();
+  resizeCanvas(divWidth, divHeight);
+}
+
+
+// Used to only draw on changed temperatures
+var keepLastFrame = false;
+
+////////////////////////////////////////////////////////////////////////////////
+// Encapsulates the slider, which stores a value between the min/max allowed.
+var Slider = function (){
+    // Positioning data
+    this.leftX = 40;
+    this.rightX = 366;
+    this.topY = 20;
+    this.botY = 46;
+    this.sliderPos = (this.leftX+this.rightX)/2;
+    // Change of values and stored value
+    this.minVal = 10;
+    this.maxVal = 7000;
+    this.value = (this.maxVal+this.minVal)/2;
+    this.percent = 50;
+    this.draw = function(tempColor) {
+        stroke(250, 250, 250);
+        strokeWeight(2);
+        var y = (this.topY + this.botY)/2;
+        line(this.leftX,y, this.rightX, y);
+
+        fill(tempColor);
+        ellipse(this.sliderPos, y, 15, 15);
+
+        fill(255, 255, 255);
+        text(this.minVal + " Kelvin", this.leftX-1, this.botY+10);
+        text(this.maxVal + " Kelvin", this.rightX-61, this.botY +10);
+        text("Temperature: " + this.value.toPrecision(4) + " degrees Kelvin", this.leftX + 76, this.topY);
+    };
+    // Calculates the temperature based on the percent through sliding
+    this.calculateValue = function() {
+        this.percent = (this.sliderPos - this.leftX)/(this.rightX - this.leftX);
+        this.value = (1 - this.percent) * this.minVal + this.percent * this.maxVal;
+    };
+
+    // Checks if the slider was pressed. If so, gets temperature and returns true
+    this.sliderClicked = function() {
+        if(mouseX > this.leftX && mouseX < this.rightX && mouseY > this.topY && mouseY < this.botY) {
+            this.sliderPos = mouseX;
+            this.calculateValue();
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+};
+var slider = new Slider();
+////////////////////////////////////////////////////////////////////////////////
+
+// This scales the luminance to roughly mimic actual brightness without extreme
+// gamma correction. Below min temp it scales to black, above max temp it scales
+// to max brightness without affecting hue. Between those values it uses a parabola
+// to find a scale value from 0-1
+var parabolicScale = function(temp, min, max) {
+    if(temp < min) {
+        return 0;
+    }
+    else if(temp > max) {
+        return 1;
+    }
+    else {
+        // Values found using wolfram Alpha
+        var A = 4.8902e-7;var B = -0.000753;var C = 0.2899;
+        return A*pow(temp,2) + B*temp + C;
+    }
+};
 
 ////////////////////////////////////////////////////////////////////////////////
 // Draws the hot bar programmatically
