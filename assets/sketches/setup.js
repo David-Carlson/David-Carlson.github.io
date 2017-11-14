@@ -1,3 +1,5 @@
+"use strict";
+new p5();
 ////////////////////////////////////////////////////////////////////////////////
 
 // This lists the sensitivy of the CIE X tristimulus value
@@ -90,7 +92,7 @@ var Spectrum = function() {
     this.wavelengthMax = 860;
     // deltaWavelength, used in integration
     this.wavelengthStep = (this.wavelengthMax-this.wavelengthMin) / CIE_xbar.length;
-    this.tempColor;
+    this.tempColor = color(0, 0, 0);
 
     // A coordinate matrix to convert from xyz to RGB
     this.rx = 0.41847;
@@ -182,7 +184,6 @@ function setup() {
   var divHeight = $("#setup_p5_sketch").height();
   var myCanvas = createCanvas(divWidth, divHeight);
   myCanvas.parent('setup_p5_sketch');
-  spectrum.tempColor = color(0, 0, 0);
 }
 
 // when the window is resized the canvas is resized accordingly
