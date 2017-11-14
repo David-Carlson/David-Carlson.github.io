@@ -258,7 +258,7 @@ function setup() {
   graph.pos = new PVector(66, 272);
 }
 new p5();
-draw = function() {
+function draw() {
     if(!keepLastFrame) {
         var clr = spectrum.getColor(slider.value);
         background(81, 107, 135);
