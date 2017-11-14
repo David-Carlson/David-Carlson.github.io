@@ -1,5 +1,15 @@
 "use strict";
 new p5();
+draw = function() {
+    if(!keepLastFrame) {
+        var clr = spectrum.getColor(slider.value);
+        background(81, 107, 135);
+        slider.draw(spectrum.tempColor);
+        drawBar();
+        graph.draw();
+        keepLastFrame = true;
+    }
+};
 ////////////////////////////////////////////////////////////////////////////////
 
 // This lists the sensitivy of the CIE X tristimulus value
@@ -358,16 +368,7 @@ var drawBar = function() {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-draw = function() {
-    if(!keepLastFrame) {
-        var clr = spectrum.getColor(slider.value);
-        background(81, 107, 135);
-        slider.draw(spectrum.tempColor);
-        drawBar();
-        graph.draw();
-        keepLastFrame = true;
-    }
-};
+
 
 mouseDragged = function()
 {

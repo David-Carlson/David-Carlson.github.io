@@ -52,7 +52,7 @@ var Slider = function (){
     };
 };
 var slider = new Slider();
-//////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 
 // This lists the sensitivy of the CIE X tristimulus value
 // as wavelength increases. It is integrated against the power of any given wavelength to find X. X and Z represent the color of the spectrum.
