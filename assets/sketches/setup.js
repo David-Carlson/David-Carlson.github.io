@@ -4,7 +4,9 @@ new p5();
 var tempColor;
 // Used to only draw on changed temperatures
 var keepLastFrame = false;
-
+function Vector(x, y, z){
+  this.x = x; this.y = y; this.z = z;
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -148,7 +150,7 @@ var Spectrum = function() {
         }
         // Normaly would multiply by wavelengthStep. Unneccessary since I scale
         // the luminance later
-        return new PVector(X, Y, Z);
+        return new Vector(X, Y, Z);
     };
 
     // This converts into RGB coordinates, then scales the values for display.
@@ -175,7 +177,7 @@ var Spectrum = function() {
         var XYZ = this.toXYZ(temp);
         var length = XYZ.x + XYZ.y + XYZ.z;
 
-        var xyz = new PVector(XYZ.x/length, XYZ.y/length, XYZ.z/length);
+        var xyz = new Vector(XYZ.x/length, XYZ.y/length, XYZ.z/length);
         //println("printColor " + temp);
         tempColor =  this.toRGB(xyz, temp);
         return tempColor;
