@@ -231,10 +231,10 @@ var Graph = function() {
         fill(255, 255, 255);
         text("Wavelength λ - (nm)", this.posx + 81, this.posy+22);
         text(this.maxLambda + " nm", this.posx + 241, this.posy+22);
-        pushMatrix();
+        push();
         rotate(-90);
         text("Spectral Radiance", -this.posy+30, 43);
-        popMatrix();
+        pop();
         text(this.maxPower.toPrecision(1), this.posx +-45, this.posy -this.height+8);
         // Draw the visible wavelength lines
         strokeWeight(1);
