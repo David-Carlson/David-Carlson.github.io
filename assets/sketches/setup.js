@@ -92,7 +92,7 @@ var Spectrum = function() {
     this.wavelengthMax = 860;
     // deltaWavelength, used in integration
     this.wavelengthStep = (this.wavelengthMax-this.wavelengthMin) / CIE_xbar.length;
-    this.tempColor;
+    this.tempColor = color(0, 0, 0);
 
     // A coordinate matrix to convert from xyz to RGB
     this.rx = 0.41847;
@@ -180,7 +180,7 @@ var spectrum = new Spectrum();
 ////////////////////////////////////////////////////////////////////////////////
 // Draws the power of each wavelength for a given temperature
 var Graph = function() {
-    this.pos;
+    this.pos = new PVector(66, 272);
     this.width = 283; this.height = 162;
     // Used to scale graph bounds
     this.maxLambda = 3000; this.maxPower = 10e12;
@@ -254,8 +254,6 @@ function setup() {
   var divHeight = $("#setup_p5_sketch").height();
   var myCanvas = createCanvas(divWidth, divHeight);
   myCanvas.parent('setup_p5_sketch');
-  spectrum.tempColor = color(0, 0, 0);
-  graph.pos = new PVector(66, 272);
 }
 new p5();
 function draw() {
