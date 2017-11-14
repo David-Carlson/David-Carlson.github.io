@@ -67,6 +67,20 @@
     {% endfor %}
   {% endif %}
 
+  <!-- !! p5 (Processing) support -->
+  {% assign p5_version = '0.5.16' %}
+  {% if page.p5 %}
+    {% for lib in page.p5 %}
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/{{ p5_version }}/{{ lib }}.min.js"></script>
+    {% endfor %}
+  {% endif %}
+
+  {% if page.sketches %}
+    {% for sketch in page.sketches %}
+      <script src='/assets/sketches/{{ sketch }}.js' type="text/javascript"></script>
+    {% endfor %}
+  {% endif %}
+
     <!-- Facebook OpenGraph tags -->
   {% if site.fb_app_id %}
   <meta property="fb:app_id" content="{{ site.fb_app_id }}" />

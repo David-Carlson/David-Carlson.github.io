@@ -371,7 +371,7 @@ var drawBar = function() {
 ////////////////////////////////////////////////////////////////////////////////
 
 
-mouseDragged = function()
+function mouseDragged()
 {
     if (slider.sliderClicked())
     {
