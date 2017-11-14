@@ -1,15 +1,5 @@
 "use strict";
-new p5();
-draw = function() {
-    if(!keepLastFrame) {
-        var clr = spectrum.getColor(slider.value);
-        background(81, 107, 135);
-        slider.draw(spectrum.tempColor);
-        drawBar();
-        graph.draw();
-        keepLastFrame = true;
-    }
-};
+
 ////////////////////////////////////////////////////////////////////////////////
 
 // This lists the sensitivy of the CIE X tristimulus value
@@ -267,6 +257,17 @@ function setup() {
   spectrum.tempColor = color(0, 0, 0);
   graph.pos = new PVector(66, 272);
 }
+new p5();
+draw = function() {
+    if(!keepLastFrame) {
+        var clr = spectrum.getColor(slider.value);
+        background(81, 107, 135);
+        slider.draw(spectrum.tempColor);
+        drawBar();
+        graph.draw();
+        keepLastFrame = true;
+    }
+};
 
 // when the window is resized the canvas is resized accordingly
 function windowResized(){
