@@ -47,8 +47,6 @@ XYZ is somewhat analogous to how the cones in human eyes work, called the
 <a href="https://en.wikipedia.org/wiki/LMS_color_space">LMS Color Space</a>.
 Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
 
-# An example in 5 seconds
-
 ## Show me the money
 Finally, after implementing all this magic, we allowed any object in our ray
 tracer to have a temperature and our corresponding black-body shader. Here
