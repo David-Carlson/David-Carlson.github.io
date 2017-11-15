@@ -1,4 +1,5 @@
 /*@import url("pygment_highlights.css");*/
+
 // Break up file into scss imports
 
 /*
@@ -13,10 +14,11 @@
 @import "footer";
 @import "video";
 
+
 @import "todo"; //junk file for later placement
 */
 /* --- General --- */
-
+@import "highlight-styles";
 body#whitepaper {
   position: relative;
   color: #4E4E4E;
