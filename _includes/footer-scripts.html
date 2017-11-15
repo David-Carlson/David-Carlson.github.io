@@ -3,6 +3,8 @@
     {% include ext-js.html js=js %}
   {% endfor %}
 {% endif %}
+<!-- !! Starts highlight.js code -->
+<script>hljs.initHighlightingOnLoad();</script>
 
 {% if page.ext-js %}
   {% for js in page.ext-js %}
