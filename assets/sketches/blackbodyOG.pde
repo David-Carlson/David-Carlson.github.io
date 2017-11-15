@@ -1,5 +1,8 @@
 // Used to only draw on changed temperatures
 var keepLastFrame = false;
+function setup(){
+  size(600,600);
+}
 
 // Encapsulates the slider, which stores a value between the min/max allowed.
 var Slider = function (){
