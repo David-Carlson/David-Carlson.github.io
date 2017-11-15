@@ -22,15 +22,16 @@ dinos:
     alt: A purple velociraptor
   - link: /img/blog/blackbody/blue.jpg
     alt: A blue velociraptor
+ext-js:
+  - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"
+---
+<!--
 p5:
   - p5
 sketches:
-  - setup
----
-<!-- - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.js" -->
+  - setup -->
 <!-- ext-js:
   - "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.min.js"
-ext-css:
   - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" -->
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
@@ -52,7 +53,12 @@ XYZ is somewhat analogous to how the cones in human eyes work, called the
 Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
 
 # An example in 5 seconds
-<div id="setup_p5_sketch" style="height: 400px; position: relative;"></div>
+<% assign datasrc = '/assets/sketches/blackbodyOG.pde' %>
+<h4>{{ datasrc | prepend: site.baseurl | replace: '//', '/' }}</h4>
+<canvas
+  data-processing-sources="{{ datasrc | prepend: site.baseurl | replace: '//', '/' }}">
+</canvas>
+<!-- <div id="setup_p5_sketch" style="height: 400px; position: relative;"></div> -->
 
 
 ## Show me the money
