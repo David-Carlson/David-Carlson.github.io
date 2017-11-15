@@ -54,7 +54,7 @@ Changing from XYZ to RGB is a simple coordinate change which can be done with ma
 
 ## An interactive example!
 {% assign datasrc = '/assets/sketches/blackbodyOG.pde' %}
-<canvas
+<canvas id="blackbody-canvas"
   data-processing-sources="{{ datasrc | prepend: site.baseurl | replace: '//', '/' }}">
 </canvas>
 
