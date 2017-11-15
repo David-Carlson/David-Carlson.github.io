@@ -38,7 +38,7 @@ e.g when a point moves up, away from the blue plane, the point becomes more blue
 
 Usage:  I used Python's ArgumentParser to make my tool easier to use. An example use:
 
-<pre><code class="bash">
+<pre><code class="python">
 python PlotImage.py *.jpg --points 20000 --pprint
 </code></pre>
 This plots all Jpeg images using at most 20,000 points from the image. It pretty-prints
