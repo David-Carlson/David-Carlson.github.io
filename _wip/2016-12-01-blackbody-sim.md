@@ -53,7 +53,7 @@ XYZ is somewhat analogous to how the cones in human eyes work, called the
 Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
 
 ## An interactive example!
-<% assign datasrc = '/assets/sketches/blackbodyOG.pde' %>
+{% assign datasrc = '/assets/sketches/blackbodyOG.pde' %}
 <h4>{{ datasrc | prepend: site.baseurl | replace: '//', '/' }}</h4>
 <canvas
   data-processing-sources="{{ datasrc | prepend: site.baseurl | replace: '//', '/' }}">
