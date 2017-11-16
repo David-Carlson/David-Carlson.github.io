@@ -1,4 +1,7 @@
-(use highlight.js?) http://prismjs.com/
+Move JS and CSS below the fold
+Optimize images
+Minify/combine css/JS/HTML
+Remove pyments imports (use highlight.js?) http://prismjs.com/
   Vis.js/d3
 
 LARGE:
@@ -8,10 +11,6 @@ LARGE:
 SMALL:
   when small and unopened, tween parents to/from whitepaper
   tween opened parents from white to dark gray
-
-BlackBody:
-  Add latex code for functions Used
-  Get stupid sketch to work
 
 Figure out graph visualization:
 http://sharepointoscar.com/now/

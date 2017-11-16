@@ -22,11 +22,16 @@ dinos:
     alt: A purple velociraptor
   - link: /img/blog/blackbody/blue.jpg
     alt: A blue velociraptor
+ext-js:
+  - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"
 ---
-<!-- - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.js" -->
+<!--
+p5:
+  - p5
+sketches:
+  - setup -->
 <!-- ext-js:
   - "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.min.js"
-ext-css:
   - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" -->
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
@@ -46,6 +51,13 @@ I convert the spectrum graph into the intermediary
 XYZ is somewhat analogous to how the cones in human eyes work, called the
 <a href="https://en.wikipedia.org/wiki/LMS_color_space">LMS Color Space</a>.
 Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
+
+## An interactive example!
+{% assign datasrc = '/assets/sketches/blackbodyOG.pde' %}
+<h4>{{ datasrc | prepend: site.baseurl | replace: '//', '/' }}</h4>
+<canvas
+  data-processing-sources="{{ datasrc | prepend: site.baseurl | replace: '//', '/' }}">
+</canvas>
 
 ## Show me the money
 Finally, after implementing all this magic, we allowed any object in our ray

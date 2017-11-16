@@ -19,7 +19,6 @@
 */
 /* --- General --- */
 @import "highlight-styles";
-@import "bootstrap-changes";
 body#whitepaper {
   position: relative;
   color: #4E4E4E;
@@ -135,11 +134,6 @@ img::-moz-selection {
 
 img {
   max-width: 100%;
-}
-
-// Targets image-grid blocks
-.row .d-block{
-  margin-bottom: 1em;
 }
 
 .disqus-comments {

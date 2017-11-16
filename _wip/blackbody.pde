@@ -1,3 +1,8 @@
+void setup() {
+  size(400, 400);
+  frameRate(15);
+}
+
 // Used to only draw on changed temperatures
 var keepLastFrame = false;
 
@@ -45,20 +50,6 @@ var Slider = function (){
             return false;
         }
     };
-
-    // this.sliderTouched = function(TouchEvent touchEvent) {
-    //     for (int i = 0; i < touchEvent.touches.length; i++) {
-    //         tx = touchEvent.touches[i].offsetX;
-    //         ty = touchEvent.touches[i].offsetY;
-    //         if(tx > this.leftX && tx < this.rightX &&
-    //           ty > this.topY  && ty < this.botY){
-    //             this.sliderPos = tx;
-    //             this.calculateValue();
-    //             return true;
-    //         }
-    //     }
-    //     return false;
-    // };
 };
 var slider = new Slider();
 //////////////////////////////////////////////////////////////////////////////
@@ -368,13 +359,6 @@ draw = function() {
 
 mouseDragged = function()
 {
-    if (slider.sliderClicked())
-    {
-        keepLastFrame = false;
-    }
-};
-
-touchMove = function(TouchEvent touchEvent){
     if (slider.sliderClicked())
     {
         keepLastFrame = false;
