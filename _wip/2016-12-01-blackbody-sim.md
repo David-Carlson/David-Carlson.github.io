@@ -63,7 +63,7 @@ Finally, after implementing all this magic, we allowed any object in our ray
 tracer to have a temperature and our corresponding black-body shader. Here
 are the initial results:
 
-{% include image-grid.html image-set=page.scale class="col=xs-12 float-md-right" %}
+{% include image-grid.html image-set=page.scale class="col-xs-12 float-md-right" %}
 
 As you can see, each sphere has the correct hue as they increase in temperature.
 We quickly realized that our equation has a flaw; As temperature doubles, the
