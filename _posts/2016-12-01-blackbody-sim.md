@@ -33,6 +33,7 @@ With the help of a friend, Seán Ceallaigh, we built a graphics shader that
 simulates the light that hot objects give off - black-body radiation.
 This effect causeshot stoves to be red and stars to look whitish-blue.
 <!--more-->
+[Check out an interactive version!](https://www.khanacademy.org/computer-programming/black-body-radiation-simulator/4530109545316352)
 
 ## The Science behind it
 The heart of the algorithm is a function that takes a temperature and a wavelength
