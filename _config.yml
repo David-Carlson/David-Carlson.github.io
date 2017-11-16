@@ -124,7 +124,7 @@ encoding: "utf-8"
 markdown: kramdown
 highlighter: rouge
 # permalink: /:year-:month-:day-:title/
-permalink: /blog/:title
+permalink: /blog/:title/
 paginate: 5
 kramdown:
   input: GFM
