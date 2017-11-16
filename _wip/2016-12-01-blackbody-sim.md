@@ -70,7 +70,7 @@ We quickly realized that our equation has a flaw; As temperature doubles, the
 energy emitted goes up 16 fold! This meant that the image was nigh-impossible
 to expose with our virtual cameras. We ended up using a mixture of HDR and scaling
 the intensity of light to reasonable bounds.
-{% include image-grid.html image-set=page.bright class="col-xs-12" %}
+{% include image-grid.html image-set=page.bright class="col-xs-12 float-md-left" %}
 
 Lastly, we wanted to see what our shaders would do when using impossible
 physical constants, as well as other changes. This resulted in some crazy
