@@ -136,6 +136,11 @@ img {
   max-width: 100%;
 }
 
+// Targets image-grid blocks
+.row .d-block{
+  margin-bottom: 1em;
+}
+
 .disqus-comments {
   margin-top: 30px;
 }
