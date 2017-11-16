@@ -1,27 +1,13 @@
 ---
 layout: post
-title: Black-body Radiation Simulation
+title: Atmospheric Scattering Simulator
 image: /img/blog/blackbody/mainroo.jpg
-github: BlackBody
 tags: [graphics, java, sim]
 excerpt_separator: <!--more-->
 heat-graph:
   - link: https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg
     alt: A graph showing intensity vs. wavelength
     caption: Graph of Intensity vs. Wavelength of black-body radiation
-scale:
-  - link: /img/blog/blackbody/scale.jpg
-    alt: Three hot spheres emitting their predicted color
-    caption: Three hot spheres emitting their predicted color
-bright:
-  - link: /img/blog/blackbody/bright.jpg
-    alt: Sphere light scaled to reasonable bounds
-    caption: Energy normalized
-dinos:
-  - link: /img/blog/blackbody/purple.jpg
-    alt: A purple velociraptor
-  - link: /img/blog/blackbody/blue.jpg
-    alt: A blue velociraptor
 ext-js:
   - "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"
 ---
@@ -62,9 +48,7 @@ Changing from XYZ to RGB is a simple coordinate change which can be done with ma
 Finally, after implementing all this magic, we allowed any object in our ray
 tracer to have a temperature and our corresponding black-body shader. Here
 are the initial results:
-
-{% include image-grid.html image-set=page.scale class="col=xs-12 pull-md-right" %}
-
+{% include image-grid.html image-set=page.scale class="col=xs-12" %}
 As you can see, each sphere has the correct hue as they increase in temperature.
 We quickly realized that our equation has a flaw; As temperature doubles, the
 energy emitted goes up 16 fold! This meant that the image was nigh-impossible
