@@ -62,13 +62,13 @@ Changing from XYZ to RGB is a simple coordinate change which can be done with ma
 Finally, after implementing all this magic, we allowed any object in our ray
 tracer to have a temperature and our corresponding black-body shader. Here
 are the initial results:
-{% include image-grid.html image-set=page.scale class="col=xs-12" %}
+{% include image-grid.html image-set=page.scale class="col=xs-12 float-md-right" %}
 As you can see, each sphere has the correct hue as they increase in temperature.
 We quickly realized that our equation has a flaw; As temperature doubles, the
 energy emitted goes up 16 fold! This meant that the image was nigh-impossible
 to expose with our virtual cameras. We ended up using a mixture of HDR and scaling
 the intensity of light to reasonable bounds.
-{% include image-grid.html image-set=page.bright class="col-xs-12" %}
+{% include image-grid.html image-set=page.bright class="col-xs-12 float-left-md" %}
 
 Lastly, we wanted to see what our shaders would do when using impossible
 physical constants, as well as other changes. This resulted in some crazy
