@@ -1,6 +1,6 @@
 // Used to only draw on changed temperatures
 var keepLastFrame = false;
-function setup(){
+void setup(){
   size(500,500);
 }
 
