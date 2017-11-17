@@ -462,8 +462,8 @@ footer .theme-by {
   font-size: 18px;
   font-style: italic;
 }
-.post-meta a.btn,
-.post-heading a.btn
+a.btn#gitbtn,
+a.btn#gitbtn
 {
   background-color: #e6ebf1;
   background-image: linear-gradient(to bottom, #f0f3f6, #dce3ec);
@@ -475,12 +475,11 @@ footer .theme-by {
   padding: 0 3px;
   margin: 0 0 2px 1em;
   line-height: 16px;
-  box-sizing: 18px;
 
   color: #4E4E4E;
 }
-.post-meta a.btn:hover,
-.post-heading a.btn:hover{
+a#gitbtn:hover,
+a#gitbtn:hover{
   color: #CC675B;
 }
 
