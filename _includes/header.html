@@ -38,8 +38,7 @@
 		  {% if include.type == "post" %}
   		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}
           {% if page.github %}
-          <a class="btn btn-xs" href="https://github.com/{{ page.github }}" aria-label="GitHub Code">
-            <i class="fa fa-github" aria-hidden="true"></i>&nbsp;Github Code</a>
+            {% include github-button.html suffix=page.github %}
           {% endif %}</span>
 		  {% endif %}
         </div>
@@ -67,8 +66,7 @@
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}
         {% if page.github %}
-        <a class="btn btn-xs" href="https://github.com/{{ page.github }}" aria-label="GitHub Code">
-          <i class="fa fa-github" aria-hidden="true"></i>&nbsp;Github Code</a>
+          {% include github-button.html suffix=page.github %}
         {% endif %}
       </span>
 		  {% endif %}
