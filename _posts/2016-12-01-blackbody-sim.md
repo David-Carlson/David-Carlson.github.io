@@ -2,7 +2,7 @@
 layout: post
 title: Black-body Radiation Simulation
 image: /img/blog/blackbody/mainroo.jpg
-github: BlackBody
+github: David-Carlson/BlackBody
 tags: [graphics, java, sim]
 excerpt_separator: <!--more-->
 heat-graph:
