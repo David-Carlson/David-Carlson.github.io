@@ -26,6 +26,7 @@
 
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
+      <!-- {{ css }} -->
       {% include ext-css.html css=css %}
     {% endfor %}
   {% endif %}
