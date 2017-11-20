@@ -1,5 +1,4 @@
 /*@import url("pygment_highlights.css");*/
-
 // Break up file into scss imports
 
 /*
@@ -14,11 +13,10 @@
 @import "footer";
 @import "video";
 
-
 @import "todo"; //junk file for later placement
 */
 /* --- General --- */
-@import "highlight-styles";
+
 body#whitepaper {
   position: relative;
   color: #4E4E4E;
@@ -135,9 +133,6 @@ img::-moz-selection {
 img {
   max-width: 100%;
 }
-.row .d-block {
-  margin-bottom: 1em;
-}
 
 .disqus-comments {
   margin-top: 30px;
@@ -167,13 +162,6 @@ textarea {
 .btn-primary {
   background-color: #b35352;
   border-color: #b35352;
-}
-
-#blackbody-canvas {
-  height:auto;
-  width:auto;
-  display: block;
-  margin: 0 auto;
 }
 
 

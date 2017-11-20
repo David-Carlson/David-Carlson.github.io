@@ -1,8 +1,7 @@
 Move JS and CSS below the fold
 Optimize images
 Minify/combine css/JS/HTML
-Remove pyments imports (use highlight.js?) http://prismjs.com/
-  Vis.js/d3
+Remove pyments imports (use highlight.js?)
 
 LARGE:
   Project pages for old work

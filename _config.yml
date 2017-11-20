@@ -27,10 +27,9 @@ navbar-links:
     - About me: "aboutme"
     - Résumé: "resume"
   Projects:
-    - Blackbody Simulatation: "https://david-carlson.github.io/blog/blackbody-sim"
     - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner"
-    - Word Snack: "https://www.youtube.com/watch?time_continue=75&v=DcpZ1Ph1ugo"
-
+    - Word Snack: "http://wordsnack.net/"
+    - Blackbody Simulatation: "https://github.com/David-Carlson/BlackBody"
 
 collections:
   pages:
@@ -89,7 +88,7 @@ share-links-active:
   twitter: false
   facebook: false
   google: false
-  linkedin: false
+  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -124,7 +123,7 @@ encoding: "utf-8"
 markdown: kramdown
 highlighter: rouge
 # permalink: /:year-:month-:day-:title/
-permalink: /blog/:title/
+permalink: /blog/:title
 paginate: 5
 kramdown:
   input: GFM
