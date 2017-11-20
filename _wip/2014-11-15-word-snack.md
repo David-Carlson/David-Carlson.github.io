@@ -18,8 +18,7 @@ of 34 members from the Five College consortium created WordSnack from scratch in
 <!--more-->
 
 
-<iframe width="560" height="315" class="col-xs-12 text-center"
-  src="https://www.youtube.com/embed/DcpZ1Ph1ugo?rel=0"
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DcpZ1Ph1ugo?rel=0"
   frameborder="0" allowfullscreen></iframe>
 
 My role in this game was as a C# Programmer and tools engineer. I helped early

@@ -28,10 +28,10 @@ body#whitepaper {
   font-size: 18px;
 }
 #whitepaper {
-  background: #EEE url("/img/whitepaper.png") !important;
+  background: #EEE url("../img/whitepaper.png") !important;
 }
 #redpaper {
-  background: #CC675B url("/img/redpaper.png") !important;
+  background: #CC675B url("../img/redpaper.png") !important;
 }
 p {
   margin: 30px 0;
@@ -462,8 +462,8 @@ footer .theme-by {
   font-size: 18px;
   font-style: italic;
 }
-a#gitbtn,
-a#gitbtn
+.post-meta a.btn,
+.post-heading a.btn
 {
   background-color: #e6ebf1;
   background-image: linear-gradient(to bottom, #f0f3f6, #dce3ec);
@@ -475,17 +475,14 @@ a#gitbtn
   padding: 0 3px;
   margin: 0 0 2px 1em;
   line-height: 16px;
+  box-sizing: 18px;
 
   color: #4E4E4E;
 }
-a#gitbtn:hover,
-a#gitbtn:hover {
+.post-meta a.btn:hover,
+.post-heading a.btn:hover{
   color: #CC675B;
 }
-// a#gitbtn span:before {
-//   font-family: 'FontAwesome';
-//   content: "\f09b";
-// }
 
 
 .post-preview .post-entry {

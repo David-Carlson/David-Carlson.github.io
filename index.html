@@ -22,7 +22,8 @@ use-site-title: true
     <p class="post-meta">
       Posted on {{ post.date | date: "%B %-d, %Y" }}
       {% if post.github %}
-        {% include github-button.html suffix=post.github %}
+      <a class="btn btn-xs" href="https://github.com/{{ post.github }}" aria-label="GitHub Code">
+        <i class="fa fa-github" aria-hidden="true">&nbsp;Github Code</i></a>
       {% endif %}
     </p>
 
