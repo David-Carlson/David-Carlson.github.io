@@ -462,8 +462,8 @@ footer .theme-by {
   font-size: 18px;
   font-style: italic;
 }
-a#gitbtn,
-a#gitbtn
+a.btn#gitbtn,
+a.btn#gitbtn
 {
   background-color: #e6ebf1;
   background-image: linear-gradient(to bottom, #f0f3f6, #dce3ec);
@@ -479,13 +479,9 @@ a#gitbtn
   color: #4E4E4E;
 }
 a#gitbtn:hover,
-a#gitbtn:hover {
+a#gitbtn:hover{
   color: #CC675B;
 }
-// a#gitbtn span:before {
-//   font-family: 'FontAwesome';
-//   content: "\f09b";
-// }
 
 
 .post-preview .post-entry {
