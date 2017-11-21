@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resume
+title: Résumé
 ---
 <div class="text-center">
     <img src="/img/blog/dataresume.jpg" class="rounded">
