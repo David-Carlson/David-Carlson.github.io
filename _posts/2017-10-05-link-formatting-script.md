@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Link Formatting Script
-github: PyScripts
+github: David-Carlson/PyScripts
 tags: [script, python, regex]
 excerpt_separator: <!--more-->
 ---
