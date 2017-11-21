@@ -16,6 +16,7 @@
 @import "todo"; //junk file for later placement
 */
 /* --- General --- */
+@import "highlight-styles";
 
 body#whitepaper {
   position: relative;
@@ -133,6 +134,9 @@ img::-moz-selection {
 img {
   max-width: 100%;
 }
+.row .d-block{
+  margin-bottom: 1em;
+}
 
 .disqus-comments {
   margin-top: 30px;
@@ -163,7 +167,12 @@ textarea {
   background-color: #b35352;
   border-color: #b35352;
 }
-
+#blackbody-canvas {
+  height:auto;
+  width:auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /* --- Navbar --- */
 
