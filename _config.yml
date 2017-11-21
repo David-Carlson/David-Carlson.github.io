@@ -88,7 +88,7 @@ share-links-active:
   twitter: false
   facebook: false
   google: false
-  linkedin: false
+  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -123,7 +123,7 @@ encoding: "utf-8"
 markdown: kramdown
 highlighter: rouge
 # permalink: /:year-:month-:day-:title/
-permalink: /blog/:title/
+permalink: /blog/:title
 paginate: 5
 kramdown:
   input: GFM
