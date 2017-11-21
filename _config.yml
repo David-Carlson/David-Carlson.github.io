@@ -37,7 +37,7 @@ collections:
     permalink: /:path/
   wip:
     output: true
-    permalink: /wip/:title/
+    permalink: /wip/:title
 
 # Color variables for CSS styling
 colors:
@@ -88,7 +88,7 @@ share-links-active:
   twitter: false
   facebook: false
   google: false
-  linkedin: true
+  linkedin: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
