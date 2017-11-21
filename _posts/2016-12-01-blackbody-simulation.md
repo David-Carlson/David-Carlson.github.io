@@ -2,7 +2,7 @@
 layout: post
 title: Black-body Radiation Simulation
 image: /img/blog/blackbody/mainroo.jpg
-github: BlackBody
+github: David-Carlson/BlackBody
 tags: [graphics, java, sim]
 excerpt_separator: <!--more-->
 heat-graph:
@@ -26,7 +26,7 @@ dinos:
 
 With the help of a friend, Seán Ceallaigh, we built a graphics shader that
 simulates the light that hot objects give off - black-body radiation.
-This effect causeshot stoves to be red and stars to look whitish-blue.
+This effect causes stoves to be red and stars to look whitish-blue.
 <!--more-->
 ## The Science behind it
 The heart of the algorithm is a function that takes a temperature and a wavelength
