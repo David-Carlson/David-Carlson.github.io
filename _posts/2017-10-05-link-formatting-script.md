@@ -21,7 +21,7 @@ www.udemy.com/web-design-creating-websites-from-scratch/?couponCode=WEBFREE
 
 My script changed the links and added
 dashed separators to distinguish when the topic changed.
-```plaintext
+<pre><code class="markdown">
 Coupons are valid for a limited time only, so grab them while they last.
 WEB DEVELOPMENT
 ------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ responsive website template from scratch html css
 	www.udemy.com/responsive-website-template-from-scratch-html-css/?couponCode=FREEFB
 web design creating websites from scratch
 	www.udemy.com/web-design-creating-websites-from-scratch/?couponCode=WEBFREE
-```
+</code></pre>
 
 ## The Code
 I used regular expressions for the extraction, and then wrote several output
