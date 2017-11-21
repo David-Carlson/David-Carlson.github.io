@@ -38,6 +38,6 @@ I used regular expressions for the extraction, and then wrote several output
 formats for the links, including HTML anchor tags, markdown format, and the
 currently shown format where urls are tabbed in. This was because pastebin
 wouldn't accept links with alternate text.
-```python
+<pre><code class="python">
 {% include blog/ProcessRedditLinks.py %}
-```
+</code></pre>
