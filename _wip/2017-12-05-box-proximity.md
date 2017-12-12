@@ -10,40 +10,22 @@ heat-graph:
     alt: A graph showing intensity vs. wavelength
     caption: Graph of Intensity vs. Wavelength of black-body radiation
 ---
+<!-- TODO: Add image and inline images above -->
+<!-- Add latex and/or SVG graphics -->
 
-
-The challenge was to decide whether a 2D point is within a given distance to a rectangle, which might be rotated. I first solved this in C# but then decided to remake it in Python to graph my solution
+The challenge was to decide whether a 2D point is within a given distance to a rectangle, which might be rotated. I first solved this in C# but then decided to remake it in Python to graph/test my solution.
 <!--more-->
-## The Science behind it
-The heart of the algorithm is a function that takes a temperature and a wavelength
-and outputs the intensity. You can plot this on a graph to see what the light
-would look like. Below, each line represents the output of all wavelengths for a
-given temperature.
+## Initial Thoughts
+Immediately, I started thinking about distance equations: Point->Point distance, Point->Line-segment, and Point->Axially-Aligned line. I could generate the 4 line segments and figure out if the point was inside/near them, but that sounded verbose and full of edge cases, pun intended. Instead, I decided to 'undo' the rectangle's transformations by finding the point's coordinates **relative** to the rectangle. This involved subtracting the rectangle's center from my point and calculating a transformation to rotate the point the opposite direction that the rectangle was rotated.
+<!-- Picture showing rect transformation -->
+<!-- Latex of matrices used -->
+<!-- Link to resources used -->
+
+After finding point_rect-local, I took the absolute value of the coordinates, which mirrors the point into the upper-right hand corner of the rect. This doesn't change the distance to the rect and allows me to reduce the number of cases. Finally, I did simple math to decide whether the point was within, directly above/right of the rectangle, or above **and** right. The first two cases involve subtracting distance to the rectangle edge. The last case involves point-point distance from the rectangle corner.
+
+## Pretty graphs
+
+<!--
 {% include image-grid.html image-set=page.heat-graph class="col-xs-12" %}
-
-I convert the spectrum graph into the intermediary
-<a href="https://www.youtube.com/watch?v=x0-qoXOCOow">XYZ Color space</a>.
-XYZ is somewhat analogous to how the cones in human eyes work, called the
-<a href="https://en.wikipedia.org/wiki/LMS_color_space">LMS Color Space</a>.
-Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
-
-## Show me the money
-Finally, after implementing all this magic, we allowed any object in our ray
-tracer to have a temperature and our corresponding black-body shader. Here
-are the initial results:
-{% include image-grid.html image-set=page.scale class="col=xs-12" %}
-As you can see, each sphere has the correct hue as they increase in temperature.
-We quickly realized that our equation has a flaw; As temperature doubles, the
-energy emitted goes up 16 fold! This meant that the image was nigh-impossible
-to expose with our virtual cameras. We ended up using a mixture of HDR and scaling
-the intensity of light to reasonable bounds.
-{% include image-grid.html image-set=page.bright class="col-xs-12" %}
-
-Lastly, we wanted to see what our shaders would do when using impossible
-physical constants, as well as other changes. This resulted in some crazy
-renders!
-{% include image-grid.html image-set=page.dinos class="col-md-6 col-xs-12" %}
-
-
-
-<!-- TODO ADD an inline link include -->
+<a href="https://www.youtube.com/watch?v=x0-qoXOCOow">XYZ Color space</a>
+ -->
