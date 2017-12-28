@@ -36,7 +36,5 @@ Immediately, I started thinking about distance equations: Point->Point distance,
 
 After finding rect-relative-point, I took the absolute value of the coordinates, which mirrors the point into the upper-right hand corner of the rect. This doesn't change the distance to the rect and allows me to reduce the number of cases. Finally, I did simple math to decide whether the point was within, directly above/right of the rectangle, or above **and** right. The first two cases involve subtracting distance to the rectangle edge. The last case involves point-point distance from the rectangle corner.
 
-## Pretty graphs
-
 {% include image-grid.html image-set=page.rect-graph class="col-md-6 col-xs-12" %}
-Great, so the initial plots look correct for a normal rectangles. My plan to visualize it worked it, meaning I can see many results at once. The third picture shows the points close to an infinitely small rectangle. As predicted, it's a circle. Lastly, I tried changing the rectangle's axes so they weren't 90 degrees from each other. This results in a parallelogram, as the last image
+Great, so the initial plots look correct for a normal rectangles. My plan to visualize it worked it, meaning I can see many results at once. The third picture shows the points close to an infinitely small rectangle. As predicted, it's a circle. Lastly, I tried changing the rectangle's axes so they weren't 90 degrees from each other. This results in a parallelogram, as seen in the last image. Success!
