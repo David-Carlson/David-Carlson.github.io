@@ -1,0 +1,31 @@
+<!-- row -->
+  <!-- column sizes -->
+    <!-- thumbnail -->
+      <!-- img + caption class -->
+  <div class="row">
+    {% for i in include.image-set %}
+      <div class="figure {{ include.class }}">
+        <div class="center-block thumbnail">
+          <img src="{{ i.link }}" class="img-responsive img-rounded" alt="{{ i.alt }}">
+          {% if i.caption %}
+          <div class="text-center"><em>{{ i.caption }}</em></div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+
+<!-- 
+  <div class="row">
+    {% for i in include.image-set %}
+      <div class="figure {{ include.class }}">
+        <div class="center-block d-block">
+          <img src="{{ i.link }}" class="img-responsive img-rounded center-block" alt="{{ i.alt }}">
+          {% if i.caption %}
+          <div class="text-center"><em>{{ i.caption }}</em></div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div> -->
