@@ -3,7 +3,7 @@ layout: post
 title: Plotting art on a graph
 image: /img/blog/3DScatterPlot/goghpink.jpg
 tags: [script, python, matplotlib]
-github: David-Carlson/PyScripts
+github: David-Carlson/PyScripts/tree/master/3DScatterPlot
 image-set:
   - link: /img/blog/3DScatterPlot/plots/dali.jpg
     alt: Salvador Dalí  The Persistence of Memory
