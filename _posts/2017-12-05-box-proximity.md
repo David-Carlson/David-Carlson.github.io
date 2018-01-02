@@ -39,7 +39,12 @@ I found this transformation by finding the change of basis matrix, which, simply
 <!-- Link to resources used -->
 After finding the point relative to the rectangle, I took the absolute value of the point's coordinates.
 If the point was (-20,-10), the distance is the same as if it were (20,10). This greatly simplifies the logic.
-The rest of the code is testing whether the point is inside, to the right,
+The rest of the code is testing whether the point is inside, to the right, above, or right & above, of the rectangle.
+Finding the distance in each case is trivial.
 
 {% include image-grid.html image-set=page.rect-graph class="col-md-6 col-xs-12" %}
 Great, so the initial plots look correct for a normal rectangles. My plan to visualize it worked it, meaning I can see many results at once. The third picture shows the points close to an infinitely small rectangle. As predicted, it's a circle. Lastly, I tried changing the rectangle's axes so they weren't 90 degrees from each other. This results in a parallelogram, as seen in the last image. Success!
+
+My code is a little more complex than necessary since I wanted practice in documentation,
+to use Numpy for matrix inversion, and proper command line support. My initial implementation in C#
+didn't use external libraries and was much more efficient, but that wasn't a goal for this version. 
