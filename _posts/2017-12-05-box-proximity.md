@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Detecting points near Rectangles
-image: /img/blog/box-proximity/rotate.jpg
+image: /img/blog/box-proximity/icon.jpg
 github: David-Carlson/PyScripts/tree/master/BoxProximity
 tags: [script, python, matplotlib, interview]
 excerpt_separator: <!--more-->
