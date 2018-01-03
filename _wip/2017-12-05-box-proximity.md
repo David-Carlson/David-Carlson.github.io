@@ -37,8 +37,8 @@ remake it in Python to graph/test my solution.
 
 ## Initial Thoughts
 The rectangle is described by center position, dimensions, and the local X and Y axes
-which describe rotation. For no rotation, these are (1,0) and (0,1) respectively.
-A 45 degree rotation is represented by (1,1), (-1,1) for localX and localY.
+which describe rotation. For no rotation, these are `(1,0)` and `(0,1)` respectively.
+A 45 degree rotation is represented by `(1,1)`, `(-1,1)` for localX and localY.
 
 
 Immediately, I considered distance equations involving points and lines.
