@@ -11,14 +11,19 @@ rect-graph:
     caption: All points directly inside rectangle
   - link: /img/blog/box-proximity/rotate.jpg
     alt: Plotting a rotated rectangle
-    caption: Plotting points near/inside rotated Rectangle
+    caption: Plotting points near rotated Rectangle
   - link: /img/blog/box-proximity/circle.jpg
     alt: Plotting a circle
     caption: Plotting distance to point
   - link: /img/blog/box-proximity/skew.jpg
     alt: Skewing the rectangle coordinates
     caption: Skewing the rectangle's local coordinates
-
+basis1:
+  - link: /img/blog/box-proximity/latex/basis1.png
+    alt: Change of base from rect coordinates to global
+basis2:
+  - link: /img/blog/box-proximity/latex/basis2.png
+    alt: Change of base from global to rect coordinates
 ---
 <!-- TODO: Add image and inline images above -->
 <!-- Add latex and/or SVG graphics
@@ -32,8 +37,8 @@ remake it in Python to graph/test my solution.
 
 ## Initial Thoughts
 The rectangle is described by center position, dimensions, and the local X and Y axes
-which describe rotation. For no rotation, these are (1,0) and (0,1) respectively.
-A 45 degree rotation is represented by (1,1), (-1,1) for localX and localY.
+which describe rotation. For no rotation, these are `(1,0)` and `(0,1)` respectively.
+A 45 degree rotation is represented by `(1,1)`, `(-1,1)` for localX and localY.
 
 
 Immediately, I considered distance equations involving points and lines.
@@ -45,15 +50,17 @@ transformations by applying them in reverse to the point
 (e.g if the rect was rotated 10 degrees CCW, rotate the point 10 CW).
 I found this transformation by finding the change of basis matrix, which,
 simply enough, is just the column vectors of the rectangle's local X and Y axes.
+{% include image-grid.html image-set=page.basis1 class="col-xs-12" %}
 <!-- R = localX,y -->
 Reversing this is as simple as inverting the matrix and applying it.
+{% include image-grid.html image-set=page.basis2 class="col-xs-12" %}
 <!-- Draw latex matrix -->
 <!-- Picture showing rect transformation -->
 <!-- Latex of matrices used -->
 <!-- Link to resources used -->
 After finding the point relative to the rectangle, I took the absolute value of
-the point's coordinates. If the point was (-20,-10), the distance is the same as
-if it were (20,10). This greatly simplifies the logic. The rest of the code is
+the point's coordinates. If the point was at `(-20,-10)`, the distance is the same as
+if it were `(20,10)`. This greatly simplifies the logic. The rest of the code is
 testing whether the point is inside, to the right, above, or right & above,
 of the rectangle. Finding the distance in each case is trivial.
 
