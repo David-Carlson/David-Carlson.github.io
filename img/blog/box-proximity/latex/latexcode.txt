@@ -1,0 +1,14 @@
+latex2png.com
+
+\[
+\begin{bmatrix}
+    \vec{P}
+\end{bmatrix}_{rect}
+=
+\begin{bmatrix}
+    \vec{LocalX}     & \vec{LocalY}  \\
+\end{bmatrix}^{-1}
+\times
+\begin{bmatrix}
+\vec{P}
+\end{bmatrix}
