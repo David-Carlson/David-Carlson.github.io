@@ -14,7 +14,7 @@ Word Snack HD is a free puzzle game for iOS and Android. Create words that match
 
 <!--more-->
 ## The Game: The Video
-{% include youtubePlayer.html id="DcpZ1Ph1ugo"}
+{% include youtubePlayer.html id="DcpZ1Ph1ugo" %}
 
 I convert the spectrum graph into the intermediary
 <a href="https://www.youtube.com/watch?v=x0-qoXOCOow">XYZ Color space</a>.
