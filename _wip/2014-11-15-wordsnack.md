@@ -1,26 +1,26 @@
 ---
 layout: post
 title: Word Snack HD
-image: /img/blog/blackbody/mainroo.jpg
+image: /img/blog/wordsnack/icon.jpg
 github: cs327/WordSnack
 tags: [graphics, unity, c#]
 excerpt_separator: <!--more-->
-heat-graph:
-  - link: https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg
-    alt: A graph showing intensity vs. wavelength
-    caption: Graph of Intensity vs. Wavelength of black-body radiation
+images:
+  - link: /img/blog/wordsnack/menu.jpg
+    alt: The game's main menu
+  - link: /img/blog/wordsnack/
+    alt: The game's main menu
 ---
 Word Snack HD is a free puzzle game for iOS and Android. Create words that match each alien's tastes to score! I helped program this game as part of a class at Hampshire College.
 
 <!--more-->
 ## The Game: The Video
+
 {% include youtubePlayer.html id="DcpZ1Ph1ugo" %}
 
-I convert the spectrum graph into the intermediary
-<a href="https://www.youtube.com/watch?v=x0-qoXOCOow">XYZ Color space</a>.
-XYZ is somewhat analogous to how the cones in human eyes work, called the
-<a href="https://en.wikipedia.org/wiki/LMS_color_space">LMS Color Space</a>.
-Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
+C# was already my favorite language when I joined this team, which put me in a good position to guide the internal development. In the beginning I focused on finding the best data structures and C# features for scoring and handling words. I suggested using [delegate functions](http://rbwhitaker.wikidot.com/c-sharp-delegates) to represent each alien's taste in words. This let us assign them at runtime and swap them at will. We used a [Trie](https://en.wikipedia.org/wiki/Trie) to represent all the allowable words in our dictionary, a modified version of the Scrabble dictionary. This allows efficient lookup of words so that the game can tell you if a word is acceptable as you build it. 
+<!--
+Image of receipts, links from store
+links to
 
-## Show me the money
-Finally, after implementing all this magic, we allowed any object in our ray
+ -->
