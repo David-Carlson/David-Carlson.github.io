@@ -18,9 +18,6 @@ Word Snack HD is a free puzzle game for iOS and Android. Create words that match
 
 {% include youtubePlayer.html id="DcpZ1Ph1ugo" %}
 
-C# was already my favorite language when I joined this team, which put me in a good position to guide the internal development. In the beginning I focused on finding the best data structures and C# features for scoring and handling words. I suggested using [delegate functions](http://rbwhitaker.wikidot.com/c-sharp-delegates) to represent each alien's taste in words. This let us assign them at runtime and swap them at will. We used a [Trie](https://en.wikipedia.org/wiki/Trie) to represent all the allowable words in our dictionary, a modified version of the Scrabble dictionary. This allows efficient lookup of words so that the game can tell you if a word is acceptable as you build it. 
-<!--
-Image of receipts, links from store
-links to
+> Word Snack is a single player word game set in a diner in outer space. Feed words to hungry aliens, receive points for every word, and turbocharge your score by catering to their alien tastes. Some aliens love short words, others love long ones. Some crave consonants, others can’t get enough of vowels.
 
- -->
+C# was already my favorite language when I joined this team, which put me in a good position to guide the internal development. In the beginning I focused on finding the best data structures and C# features for scoring and handling words. I suggested using [delegate functions](http://rbwhitaker.wikidot.com/c-sharp-delegates) to represent each alien's taste in words. This let us assign them at runtime and swap them at will. We used a [Trie](https://en.wikipedia.org/wiki/Trie) to represent all the allowable words in our dictionary, a modified version of the Scrabble dictionary. This allows efficient lookup of words so that the game can tell you if a word is acceptable as you build it.
