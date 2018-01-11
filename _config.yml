@@ -27,9 +27,9 @@ navbar-links:
     - About me: "aboutme"
     - Résumé: "resume"
   Projects:
-    - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner"
-    - Word Snack: "http://wordsnack.net/"
     - Blackbody Simulatation: "https://github.com/David-Carlson/BlackBody"
+    - Word Snack: "https://david-carlson.github.io/blog/wordsnack"
+    - Music Lesson Planner: "https://github.com/David-Carlson/320MusicLessonPlanner"
 
 collections:
   pages:
