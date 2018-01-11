@@ -1,5 +1,4 @@
 /*@import url("pygment_highlights.css");*/
-// Break up file into scss imports
 
 /*
 @import "normalize";
@@ -16,12 +15,9 @@
 @import "todo"; //junk file for later placement
 */
 /* --- General --- */
-// @import "_multi-level-nav-links";
-//
-//
+/* --- Post and page headers --- */
 
 
-// /* --- Post and page headers --- */
 body#whitepaper {
   position: relative;
   color: #4E4E4E;
@@ -138,9 +134,7 @@ img::-moz-selection {
 img {
   max-width: 100%;
 }
-.row .d-block {
-  margin-bottom: 1em;
-}
+
 
 .disqus-comments {
   margin-top: 30px;
@@ -167,194 +161,16 @@ textarea {
   -webkit-transition-property: all;
 }
 
-.btn-primary {
-  background-color: #b35352;
-  border-color: #b35352;
-}
 
 
 /* --- Navbar --- */
-
-.navbar-custom {
-  border-bottom: 1px solid #EAEAEA;
-  background: #F5F5F5;
-
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-/*Make the the nav button white*/
-nav.navbar-default .navbar-header .navbar-toggle {
-  border-color: transparent;
-}
-nav.navbar-default .navbar-header .navbar-toggle .icon-bar{
-  background-color: #4E4E4E;
-}
-nav.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: transparent;
-}
-/* Add*/
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #e7e7e7;
-    border-color: #4E4E4E;
-}
-
-.navbar-custom .navbar-brand-logo {
-  padding-top: 0;
-
-  -webkit-transition: padding .5s ease-in-out;
-  -moz-transition: padding .5s ease-in-out;
-  transition: padding .5s ease-in-out;
-}
-.navbar-custom .navbar-brand-logo img {
-  height: 50px;
-
-  -webkit-transition: height .5s ease-in-out;
-  -moz-transition: height .5s ease-in-out;
-  transition: height .5s ease-in-out;
-}
-.navbar-custom.top-nav-short .navbar-brand-logo {
-  padding-top: 5px;
-}
-.navbar-custom.top-nav-short .navbar-brand-logo img {
-  height: 40px;
-}
-
-@media only screen and (min-width: 768px) {
-  .navbar-custom {
-    padding: 20px 0;
-
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
-  }
-
-  .navbar-custom.top-nav-short {
-    padding: 0;
-  }
-}
-
-.navbar-custom .avatar-container {
-  position: absolute;
-  left: 50%;
-
-  width: 50px;
-  margin-top: -25px;
-
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-
-  opacity: 1;
-}
-.navbar-custom .avatar-container  .avatar-img-border {
-  display: inline-block;
-
-  width: 100%;
-  margin-left: -50%;
-
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-.navbar-custom .avatar-container  .avatar-img {
-  display: block;
-
-  width: 100%;
-
-  border-radius: 50%;
-}
-
-.navbar-custom.top-nav-short .avatar-container{
-  opacity: 0;
-}
-
-.navbar-custom.top-nav-expanded .avatar-container  {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
-  .navbar-custom .avatar-container {
-    width: 100px;
-    margin-top: -50px;
-  }
-
-  .navbar-custom .avatar-container  .avatar-img-border {
-    width: 100%;
-
-    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-  }
-
-  .navbar-custom .avatar-container  .avatar-img {
-    width: 100%;
-  }
-}
-
 /* --- Footer --- */
-
-
 /* --- Post preview --- */
-
-
-
 /* --- Tags --- */
-
-
 /* --- Post and page headers --- */
-
-
-
 /* --- Pager --- */
-
-.pager li a {
-  padding: 10px 5px;
-
-  letter-spacing: 1px;
-  text-transform: uppercase;
-
-  color: #404040;
-  border-radius: 0;
-  background: #FFF;
-
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-}
-@media only screen and (min-width: 768px) {
-  .pager li a {
-    padding: 15px 25px;
-  }
-}
-.pager li a:hover,
-.pager li a:focus {
-  text-decoration: none;
-
-  color: #FFF;
-  color: #DE5A51;
-  border: 1px solid #0085a1;
-}
-
-.pager {
-  margin: 10px 0 0;
-}
-
-.pager.blog-pager {
-  margin-top: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .pager.blog-pager  {
-    margin-top: 10px;
-  }
-}
-
 /* --- Tables --- */
-
-
 /* --- Code blocks --- */
-
 
 @import "highlight-styles";
 @import "multilevel-nav";
@@ -362,8 +178,10 @@ nav.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
 @import "post-preview";
 @import "tags";
 @import "post-page-headers";
+@import "pager";
 @import "tables";
 @import "code-blocks";
+@import "bootstrap-rewrite";
 
 /* --- Social media sharing section --- */
 
