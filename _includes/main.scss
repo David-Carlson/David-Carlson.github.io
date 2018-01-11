@@ -19,11 +19,6 @@
 // @import "_multi-level-nav-links";
 //
 //
-// @import "footer";
-// @import "post-preview";
-// @import "tags";
-// @import "post-page-headers";
-
 
 
 // /* --- Post and page headers --- */
@@ -434,12 +429,15 @@ td.gutter {
   padding-top: 3px;
 }
 
+@import "highlight-styles";
+@import "multilevel-nav";
+@import "footer";
+@import "post-preview";
+@import "tags";
+@import "post-page-headers";
+
 /* --- Social media sharing section --- */
 
 #social-share-section {
   margin-bottom: 30px;
 }
-
-@import "highlight-styles";
-@import "multilevel-nav";
-@import "footer";
