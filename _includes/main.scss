@@ -23,7 +23,7 @@
 // @import "post-preview";
 // @import "tags";
 // @import "post-page-headers";
-@import "highlight-styles";
+
 
 
 // /* --- Post and page headers --- */
@@ -439,3 +439,5 @@ td.gutter {
 #social-share-section {
   margin-bottom: 30px;
 }
+
+@import "highlight-styles";
