@@ -33,7 +33,7 @@ The heart of the algorithm is a function that takes a temperature and a waveleng
 and outputs the intensity. You can plot this on a graph to see what the light
 would look like. Below, each line represents the output of all wavelengths for a
 given temperature.
-{% include image-grid.html image-set=page.heat-graph class="col-xs-12" %}
+{% include image-grid.html images=page.heat-graph class="col-xs-12" %}
 
 I convert the spectrum graph into the intermediary
 <a href="https://www.youtube.com/watch?v=x0-qoXOCOow">XYZ Color space</a>.
@@ -45,18 +45,18 @@ Changing from XYZ to RGB is a simple coordinate change which can be done with ma
 Finally, after implementing all this magic, we allowed any object in our ray
 tracer to have a temperature and our corresponding black-body shader. Here
 are the initial results:
-{% include image-grid.html image-set=page.scale class="col=xs-12" %}
+{% include image-grid.html images=page.scale class="col=xs-12" %}
 As you can see, each sphere has the correct hue as they increase in temperature.
 We quickly realized that our equation has a flaw; As temperature doubles, the
 energy emitted goes up 16 fold! This meant that the image was nigh-impossible
 to expose with our virtual cameras. We ended up using a mixture of HDR and scaling
 the intensity of light to reasonable bounds.
-{% include image-grid.html image-set=page.bright class="col-xs-12" %}
+{% include image-grid.html images=page.bright class="col-xs-12" %}
 
 Lastly, we wanted to see what our shaders would do when using impossible
 physical constants, as well as other changes. This resulted in some crazy
 renders!
-{% include image-grid.html image-set=page.dinos class="col-md-6 col-xs-12" %}
+{% include image-grid.html images=page.dinos class="col-md-6 col-xs-12" %}
 
 
 

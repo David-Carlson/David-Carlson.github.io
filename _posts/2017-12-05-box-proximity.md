@@ -50,10 +50,10 @@ transformations by applying them in reverse to the point
 (e.g if the rect was rotated 10 degrees CCW, rotate the point 10 CW).
 I found this transformation by finding the change of basis matrix, which,
 simply enough, is just the column vectors of the rectangle's local X and Y axes.
-{% include image-grid.html image-set=page.basis1 class="col-xs-12" %}
+{% include image-grid.html images=page.basis1 class="col-xs-12" %}
 <!-- R = localX,y -->
 Reversing this is as simple as inverting the matrix and applying it.
-{% include image-grid.html image-set=page.basis2 class="col-xs-12" %}
+{% include image-grid.html images=page.basis2 class="col-xs-12" %}
 <!-- Draw latex matrix -->
 <!-- Picture showing rect transformation -->
 <!-- Latex of matrices used -->
@@ -64,7 +64,7 @@ if it were `(20,10)`. This greatly simplifies the logic. The rest of the code is
 testing whether the point is inside, to the right, above, or right & above,
 of the rectangle. Finding the distance in each case is trivial.
 
-{% include image-grid.html image-set=page.rect-graph class="col-sm-6 col-xs-12" %}
+{% include image-grid.html images=page.rect-graph class="col-sm-6 col-xs-12" %}
 Great, so the initial plots look correct for a normal rectangles. My plan to
 visualize it worked it, meaning I can see many results at once. The third picture
 shows the points close to an infinitely small rectangle. As predicted, it's a circle.
