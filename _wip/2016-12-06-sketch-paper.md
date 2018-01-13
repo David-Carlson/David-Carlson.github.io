@@ -16,7 +16,7 @@ scale:
 With this post I intend to explain the math behind [A sketch-based Interface for Detail-Preserving Mesh Editing](https://www.cs.tau.ac.il/~dcor/articles/2007/A-Sketch-Based.pdf), a whitepaper presented at SIGGRAPH. Their method allows one to easily make selections on a model and modify the geometry, silhouette, and other properties.
 
 {% include youtubePlayer.html id="EMx6yNe23ug" %}
-<br>
+## My slideshow explanation
 <div class="row">
 <div class="col-xs-12">
 <div class="videowrapper">
@@ -24,8 +24,8 @@ With this post I intend to explain the math behind [A sketch-based Interface for
 </div>
 </div>
 </div>
-{% include image-grid.html image-set=page.dinos class="col-md-6 col-xs-12" %}
 
+The slides above was my original explanation. Being a presentation format, it lacks the complete description, which I'll recreate below.
 
-
-<!-- TODO ADD an inline link include -->
+The method deals with **contours** on the model. These are curves that define the overall shape, such as a jaw line or brow ridge. Put another way:
+> A sketch-based modeling system should use the very same eketches that designers would draw on a piece of paper to convey the shape. What are these lines? ... The Human visual system uses silhouettes as the first index into its memory of shapes, making everyday objects recognizable without color, shading or texture, but solely by their contours <sup><a href="https://www.cs.tau.ac.il/~dcor/articles/2007/A-Sketch-Based.pdf">[Src]</a></sup>
