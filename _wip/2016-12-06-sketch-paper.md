@@ -17,27 +17,13 @@ With this post I intend to explain the math behind [A sketch-based Interface for
 
 {% include youtubePlayer.html id="EMx6yNe23ug" %}
 
-I convert the spectrum graph into the intermediary
-<a href="https://www.youtube.com/watch?v=x0-qoXOCOow">XYZ Color space</a>.
-XYZ is somewhat analogous to how the cones in human eyes work, called the
-<a href="https://en.wikipedia.org/wiki/LMS_color_space">LMS Color Space</a>.
-Changing from XYZ to RGB is a simple coordinate change which can be done with matrices.
-
-## Show me the money
-Finally, after implementing all this magic, we allowed any object in our ray
-tracer to have a temperature and our corresponding black-body shader. Here
-are the initial results:
-{% include image-grid.html image-set=page.scale class="col=xs-12" %}
-As you can see, each sphere has the correct hue as they increase in temperature.
-We quickly realized that our equation has a flaw; As temperature doubles, the
-energy emitted goes up 16 fold! This meant that the image was nigh-impossible
-to expose with our virtual cameras. We ended up using a mixture of HDR and scaling
-the intensity of light to reasonable bounds.
-{% include image-grid.html image-set=page.bright class="col-xs-12" %}
-
-Lastly, we wanted to see what our shaders would do when using impossible
-physical constants, as well as other changes. This resulted in some crazy
-renders!
+<div class="row">
+<div class="col-xs-12">
+<div class="videowrapper">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRo8DA7FeEsjQaZEdwZJZHyoLgit8V2XcH8TPet46ym6VPkKT3ptjqapr-EvjMRLpibZGKLBNF2vujo/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+</div>
+</div>
 {% include image-grid.html image-set=page.dinos class="col-md-6 col-xs-12" %}
 
 
