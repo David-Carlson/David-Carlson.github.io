@@ -16,7 +16,7 @@ scale:
 With this post I intend to explain the math behind [A sketch-based Interface for Detail-Preserving Mesh Editing](https://www.cs.tau.ac.il/~dcor/articles/2007/A-Sketch-Based.pdf), a whitepaper presented at SIGGRAPH. Their method allows one to easily make selections on a model and modify the geometry, silhouette, and other properties.
 
 {% include youtubePlayer.html id="EMx6yNe23ug" %}
-
+<br>
 <div class="row">
 <div class="col-xs-12">
 <div class="videowrapper">
