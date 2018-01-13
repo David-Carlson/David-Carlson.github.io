@@ -28,4 +28,8 @@ With this post I intend to explain the math behind [A sketch-based Interface for
 The slides above was my original explanation. Being a presentation format, it lacks the complete description, which I'll recreate below.
 
 The method deals with **contours** on the model. These are curves that define the overall shape, such as a jaw line or brow ridge. Put another way:
-> A sketch-based modeling system should use the very same eketches that designers would draw on a piece of paper to convey the shape. What are these lines? ... The Human visual system uses silhouettes as the first index into its memory of shapes, making everyday objects recognizable without color, shading or texture, but solely by their contours <sup><a href="https://www.cs.tau.ac.il/~dcor/articles/2007/A-Sketch-Based.pdf">[Src]</a></sup>
+> A sketch-based modeling system should use the very same eketches that designers would draw on a piece of paper to convey the shape. What are these lines? ... The Human visual system uses silhouettes as the first index into its memory of shapes, making everyday objects recognizable without color, shading or texture, but solely by their contours <sup><a href="https://www.cs.tau.ac.il/~dcor/articles/2007/A-Sketch-Based.pdf">[1]</a></sup>
+
+One focus of the paper is to find contours such as silhouettes and modify in a aesthetic fashion, such as changing the profile of a nose. This involves changing the geometry to match the vertices on the silhouette with the intended path, while maintaining local shape.
+
+Another goal is to draw lines on a model and create a sharp edge, i.e a ridge or ravine, along that line by creating new vertices, displacing the vertices along the drawn line while "preserving the geometric details of the surface as much as possible". 
