@@ -25,6 +25,9 @@ basis2:
     alt: Change of base from global to rect coordinates
 ---
 A team project - our small group created a Spark application that processes COVID data. As part of this processing, we came up with 11 queries to analyze the data from different perspectives and visualized our findings in Apache Zeppelin.
+
+[Project Presentation](https://docs.google.com/presentation/d/1fOMZY-oww35DxiQFbU1SOY8MTuVIe2ggvIxjrzQtmjk/edit#slide=id.p)
+
 <!--more-->
 ## Analysis
 

@@ -28,7 +28,7 @@ A team project - we generated millions of fake Data Records for purchases, all h
 <!--more-->
 
 ## Generation
-
+[Project 3 Presentation](https://docs.google.com/presentation/d/1vBWljFKTjJFPu2C5iXkt68N7Pxm5_YPHWJjlTE-_s10/edit#slide=id.p)
 
 ## Analysis
 
