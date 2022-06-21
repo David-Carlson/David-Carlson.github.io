@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Solving Battleship
-image: /img/blog/wordsnack/icon.jpg
 github: David-Carlson/Battleship
 tags: [python, ai]
 excerpt_separator: <!--more-->
@@ -17,3 +16,5 @@ I was inspired by one of my favorite programming related websites - [Data Geneti
 This code consists primarily of *counting*. It takes each ship that hasn't sunk yet and tries to place it in every possible position across the board. If I shot at a cell and it missed, then a ship cannot be placed in any position overlapping a miss marker. It also cannot overlap a sunk ship. The result is that for each cell I have a number representing how many ships can be fit across the cell, which I interpret as a likelihood. I take just the most likely positions and throw out the rest. I then randomly choose among the most likely and shoot. This process repeats indefinitely until I hit a ship and go into *targeting mode*.  
 
 
+<!-- Update repl Publish link -->
+<!-- Update Github readme -->
