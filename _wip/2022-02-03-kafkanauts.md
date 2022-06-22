@@ -31,6 +31,14 @@ The overall goal was to practice a complex group project using a variety of soft
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSkine3a1v985RiGu9A_LJw0z1aYP8GgSBgcERGdvf-eWwpYfq5LgbyONVOU9kQgR3XlFVxqsBsdM1f/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
+<div class="row">
+<div class="col-xs-12">
+<div class="videowrapper">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSkine3a1v985RiGu9A_LJw0z1aYP8GgSBgcERGdvf-eWwpYfq5LgbyONVOU9kQgR3XlFVxqsBsdM1f/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+</div>
+</div>
+
 ## Responsibilities
 - Led team Kafkanauts, helping organize our work on Git, delegating assignments and structuring our day to
 day work
