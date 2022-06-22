@@ -20,11 +20,9 @@ rect-graph:
 basis1:
   - link: /img/blog/box-proximity/latex/basis1.png
     alt: Change of base from rect coordinates to global
-basis2:
-  - link: /img/blog/box-proximity/latex/basis2.png
-    alt: Change of base from global to rect coordinates
+
 ---
-A team project - we generated millions of fake Data Records for purchases, all hiding many subtle patterns. We sent the data to the other team using AWS/Kafka and then analyzed the data to find the other team's patterns
+A team project - we generated millions of fake Data Records for purchases, all hiding subtle patterns. We sent the data to our rival team using AWS/Kafka and then analyzed the data to find the other team's patterns via Spark.
 <!--more-->
 ## Overview
 The overall goal was to practice a complex group project using a variety of software including Kafka, EC2, Zeppelin and Hive. Given a schema for Product Orders, we generated our own product categories and through a mixture of procedural generation and using web-scraped data, we made a system that can create millions of unique Product Orders to push to the other team. When we received the other team's data we spent a large amount of time cleaning the data and ensuring correct parsing before graphing a litany of relationships and calculating various correlations.
@@ -53,6 +51,18 @@ to ensure technology parity
 - Graphed patterns in Zeppelin to illustrate complicated relationships
 
 ## Generation
+I lead the design work for making a Product Order generation pipeline. A major goal of mine was 
+make a system where the we can generate variable traffic based on time of time 
+(and also generate data faster than real-time for practical reasons). Our products are
+generated for America, Mexico and China and thus each country uses a different function
+for each class of product. These functions are shifted left/right to account for 
+timezones, then combined. The sum of all functions represents how many products
+are being made, which decides how many Product Orders we'll make in the next batch.
+From there, each product is probabilistically assigned a country and category based
+on the aforementioned functions. From there they pass through the generator functions
+that my team wrote which assigns product information like name, price, quantity, and
+location based on either code or large databases of products we found and cleaned.
+Each product has a small chance of being corrupted before being sent off to the 
+other team.  
 
-## Analysis
 
