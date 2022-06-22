@@ -56,7 +56,10 @@ make a system where the we can generate variable traffic based on time of time
 (and also generate data faster than real-time for practical reasons). Our products are
 generated for America, Mexico and China and thus each country uses a different function
 for each class of product. These functions are shifted left/right to account for 
-timezones, then combined. The sum of all functions represents how many products
+timezones, then combined. 
+
+
+The sum of all functions represents how many products
 are being made, which decides how many Product Orders we'll make in the next batch.
 From there, each product is probabilistically assigned a country and category based
 on the aforementioned functions. From there they pass through the generator functions
