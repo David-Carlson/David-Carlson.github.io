@@ -29,7 +29,7 @@ A team project - we generated millions of fake Data Records for purchases, all h
 ## Overview
 The overall goal was to practice a complex group project using a variety of software including Kafka, EC2, Zeppelin and Hive. Given a schema for Product Orders, we generated our own product categories and through a mixture of procedural generation and using web-scraped data, we made a system that can create millions of unique Product Orders to push to the other team. When we received the other team's data we spent a large amount of time cleaning the data and ensuring correct parsing before graphing a litany of relationships and calculating various correlations.
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSkine3a1v985RiGu9A_LJw0z1aYP8GgSBgcERGdvf-eWwpYfq5LgbyONVOU9kQgR3XlFVxqsBsdM1f/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 
 <div class="row">
 <div class="col-xs-12">
@@ -53,7 +53,6 @@ to ensure technology parity
 - Graphed patterns in Zeppelin to illustrate complicated relationships
 
 ## Generation
-[Project 3 Presentation](https://docs.google.com/presentation/d/1vBWljFKTjJFPu2C5iXkt68N7Pxm5_YPHWJjlTE-_s10/edit#slide=id.p)
 
 ## Analysis
 
