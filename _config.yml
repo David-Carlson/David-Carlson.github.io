@@ -122,6 +122,11 @@ timezone: "America/New_York"
 encoding: "utf-8"
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class   : 'syntax'
 # permalink: /:year-:month-:day-:title/
 permalink: /blog/:title
 paginate: 5
