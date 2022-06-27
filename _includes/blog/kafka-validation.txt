@@ -1,0 +1,37 @@
+Starting validation
+Reading from /home/daweiwei/intellij/kafkanauts/team1/test.csv
+Writing invalid files to /home/daweiwei/intellij/kafkanauts/team1/test-invalid-data.csv
+
+Total Valid orders: 2981405.0
+Total Invalid orders: 66983.0
+Corruption rate: 2.1973252748665852
+
+Columns - Number times failed: 
+-------------------------------
+  order_id                  failed 5610 times
+  customer_id               failed 6349 times
+  customer_name             failed 3123 times
+  product_id                failed 6767 times
+  product_name              failed 3170 times
+  product_category          failed 3132 times
+  payment_type              failed 3187 times
+  qty                       failed 8002 times
+  price                     failed 8326 times
+  datetime                  failed 8594 times
+  country                   failed 3270 times
+  city                      failed 3227 times
+  ecommerce_website_name    failed 3192 times
+  payment_txn_id            failed 9647 times
+  payment_txn_success       failed 3098 times
+
+Fail: 0
+Null: 0
+Error: 0
+Long 0
+Double: 0
+Total for any reason: 66983
+
+Ended validation, writing valid orders to /home/daweiwei/intellij/kafkanauts/team1/test-valid-data.csv
+Function ran for 65739 milliseconds or 65.739 seconds or 1.09565 minutes
+
+Process finished with exit code 0

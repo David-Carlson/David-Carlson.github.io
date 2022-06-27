@@ -69,3 +69,9 @@ Each product has a small chance of being corrupted before being sent off to the
 other team.  
 
 
+## Analysis
+Upon receiving the other team's data, we face a huge problem with how to detect which Product Orders we read are actually intentionally corrupted. We used multiple techinques including some 
+
+
+
+
