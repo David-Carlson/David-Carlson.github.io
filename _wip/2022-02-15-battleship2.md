@@ -6,10 +6,10 @@ github: David-Carlson/Battleship
 tags: [python, ai]
 excerpt_separator: <!--more-->
 rect-graph:
-  - link: /img/blog/box-proximity/box.jpg
+  - link: /img/blog/battleship/initial-board.png
     alt: Plotting a normal rectangle
     caption: All points directly inside rectangle
-  - link: /img/blog/box-proximity/rotate.jpg
+  - link: /img/blog/battleship/targeting-ships.png
     alt: Plotting a rotated rectangle
     caption: Plotting points near rotated Rectangle
   - link: /img/blog/box-proximity/circle.jpg
