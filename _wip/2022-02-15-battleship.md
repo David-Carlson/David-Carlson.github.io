@@ -11,7 +11,9 @@ targeting:
   - link: /img/blog/battleship/targeting-ships.png
     alt: Targeting mode showing the hits, misses, and where the program wants to aim next, either left or right of the hits
     caption: Given two hits right next to each other the algorithm views the cells above/below as not likely and instead targets the left and right sides with equal likelihood 
-
+basis2:
+  - link: /img/blog/box-proximity/latex/basis2.png
+    alt: Change of base from global to rect coordinates
 excerpt_separator: <!--more-->
 ---
 A Battleship playing script I wrote for fun. It generates random Battleship starting locations and then systematically seeks them out! [Play it online here](https://replit.com/@Sylvernale/Battleship#main.py:89:8)
@@ -32,6 +34,8 @@ Once a new ship is hit every subsequent hit goes to tracking the ship down until
 
 ## Optimizations & Techniques
 While in hunting mode, it isn't necessary to search every cell. For instance, every ship is at least 2 cells long - this means that I can ignore half the board (like shooting white tiles on a chessboard) since once I hit one part of a ship on a 'white' cell, I can find the others. I can extend this logic further by adjusting for the shortest remaining ship left. If the shortest ship is 5 cells long the pattern is searching the diagonal of every 5x5 block of cells and ignoring the others until targeting mode kicks in. 
+
+{% include image-grid.html image-set=page.basis2 class="col-xs-12" %}
 
 
   
