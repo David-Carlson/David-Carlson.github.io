@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Solving Battleship
-image: /img/blog/box-proximity/icon.jpg
+image: /img/blog/battleship/battleship.png
 github: David-Carlson/Battleship
 tags: [python, ai]
 excerpt_separator: <!--more-->
@@ -14,10 +14,6 @@ targeting:
     alt: Targeting mode showing the hits, misses, and where the program wants to aim next, either left or right of the hits
     caption: Given two hits right next to each other the algorithm views the cells above/below as not likely and instead targets the left and right sides with equal likelihood 
 ---
-<!-- TODO: Add image and inline images above -->
-<!-- Add latex and/or SVG graphics
-https://www.janvas.com/v6.1/janvas_web_6.1/en/howto.php
--->
 
 A Battleship playing script I wrote for fun. It generates random Battleship starting locations and then systematically seeks them out! [Play it online here](https://replit.com/@Sylvernale/Battleship#main.py:89:8)
 
