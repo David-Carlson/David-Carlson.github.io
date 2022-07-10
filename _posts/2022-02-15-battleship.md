@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Solving Battleship
-image: /img/blog/battleship/battleship.png
+image: /img/blog/battleship/battleship-logo.png
 github: David-Carlson/Battleship
 tags: [python, ai]
 excerpt_separator: <!--more-->
