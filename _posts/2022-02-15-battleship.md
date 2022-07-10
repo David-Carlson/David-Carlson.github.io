@@ -12,6 +12,13 @@ initial-board:
   - link: /img/blog/battleship/prob-array.png
     alt: A graph of varying shades showing relative probabilities of a ship being in any position.
     caption: This shows the probability of an aircraft carrier being in any given position. 
+probs:
+  - link: /img/blog/battleship/prob-1.png
+    alt: Shows probabilities of ships
+    caption: The probababilities of any ship being in a cell
+  - link: /img/blog/battleship/actual-1.png
+    alt: The actual locations of ships
+    caption: Where the ships actually are
 
 targeting:
   - link: /img/blog/battleship/targeting-ships.png
@@ -29,6 +36,8 @@ I was inspired by one of my favorite programming related websites - [Data Geneti
 
 ## Hunting Mode
 This code consists primarily of *counting*. It takes each ship that hasn't sunk yet and tries to place it in every possible position across the board. If I shot at a cell and it missed, then a ship cannot be placed in any position overlapping a miss marker. It also cannot overlap a sunk ship. The result is that for each cell I have a number representing how many ships can be fit across the cell, which I interpret as a likelihood. I take just the most likely positions and throw out the rest. I then randomly choose among the most likely and shoot. This process repeats indefinitely until I hit a ship and go into *targeting mode*.  
+
+{% include image-grid2.html image-set=page.probs class="col-sm-6 col-xs-12" %}
 
 ## Targeting Mode
 Once a new ship is hit every subsequent hit goes to tracking the ship down until it is sunk. This works by adding the neighbors of the hit cell to a list. I then weight this list based on the likelihood of a ship being placed across the board. Once I fully sink a ship I return to Hunting mode until all ships are sunk. 
