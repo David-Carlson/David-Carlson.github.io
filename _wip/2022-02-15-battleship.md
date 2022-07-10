@@ -5,13 +5,6 @@ image: /img/blog/box-proximity/icon.jpg
 github: David-Carlson/Battleship
 tags: [python, ai]
 excerpt_separator: <!--more-->
-board-images:
-  - link: /img/blog/battleship/initial-board.png
-    alt: A display showing the program's view of the board, the actual state, and the probabilities of ships being in a given cell
-    caption: Playing field shows hits as X, misses as O, and sunk ships as shaded blocks. 
-  - link: /img/blog/battleship/targeting-ships.png
-    alt: Targeting mode showing the hits, misses, and where the program wants to aim next, either left or right of the hits
-    caption: Given two hits right next to each other the algorithm views the cells above/below as not likely and instead targets the left and right sides with equal likelihood 
 initial-board:
   - link: /img/blog/battleship/initial-board.png
     alt: A display showing the program's view of the board, the actual state, and the probabilities of ships being in a given cell
@@ -20,12 +13,6 @@ targeting:
   - link: /img/blog/battleship/targeting-ships.png
     alt: Targeting mode showing the hits, misses, and where the program wants to aim next, either left or right of the hits
     caption: Given two hits right next to each other the algorithm views the cells above/below as not likely and instead targets the left and right sides with equal likelihood 
-basis1:
-  - link: /img/blog/box-proximity/latex/basis1.png
-    alt: Change of base from rect coordinates to global
-basis2:
-  - link: /img/blog/box-proximity/latex/basis2.png
-    alt: Change of base from global to rect coordinates
 ---
 <!-- TODO: Add image and inline images above -->
 <!-- Add latex and/or SVG graphics
@@ -33,10 +20,10 @@ https://www.janvas.com/v6.1/janvas_web_6.1/en/howto.php
 -->
 
 A Battleship playing script I wrote for fun. It generates random Battleship starting locations and then systematically seeks them out! [Play it online here](https://replit.com/@Sylvernale/Battleship#main.py:89:8)
-<!--more-->
-I was inspired by one of my favorite programming related websites - [Data Genetics](https://datagenetics.com/blog/december32011/index.html), which describes on a high level a system of alternately *Hunting* for ships until you hit one, then *Targeting* the ship until it sinks.
 
-<!-- {% include image-grid2.html image-set=page.board-images class="col-sm-6 col-xs-12" %} -->
+<!--more-->
+
+I was inspired by one of my favorite programming related websites - [Data Genetics](https://datagenetics.com/blog/december32011/index.html), which describes on a high level a system of alternately *Hunting* for ships until you hit one, then *Targeting* the ship until it sinks.
 
 {% include image-grid2.html image-set=page.initial-board class="col-sm-6 col-xs-12" %}
 
