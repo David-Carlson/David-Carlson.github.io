@@ -5,19 +5,21 @@ image: /img/blog/box-proximity/icon.jpg
 github: David-Carlson/Battleship
 tags: [python, ai]
 excerpt_separator: <!--more-->
-rect-graph:
+board-images:
   - link: /img/blog/battleship/initial-board.png
-    alt: Plotting a normal rectangle
-    caption: All points directly inside rectangle
+    alt: A display showing the program's view of the board, the actual state, and the probabilities of ships being in a given cell
+    caption: Playing field shows hits as X, misses as O, and sunk ships as shaded blocks. 
   - link: /img/blog/battleship/targeting-ships.png
-    alt: Plotting a rotated rectangle
-    caption: Plotting points near rotated Rectangle
-  - link: /img/blog/box-proximity/circle.jpg
-    alt: Plotting a circle
-    caption: Plotting distance to point
-  - link: /img/blog/box-proximity/skew.jpg
-    alt: Skewing the rectangle coordinates
-    caption: Skewing the rectangle's local coordinates
+    alt: Targeting mode showing the hits, misses, and where the program wants to aim next, either left or right of the hits
+    caption: Given two hits right next to each other the algorithm views the cells above/below as not likely and instead targets the left and right sides with equal likelihood 
+initial-board:
+  - link: /img/blog/battleship/initial-board.png
+    alt: A display showing the program's view of the board, the actual state, and the probabilities of ships being in a given cell
+    caption: Playing field shows hits as X, misses as O, and sunk ships as shaded blocks. 
+targeting:
+  - link: /img/blog/battleship/targeting-ships.png
+    alt: Targeting mode showing the hits, misses, and where the program wants to aim next, either left or right of the hits
+    caption: Given two hits right next to each other the algorithm views the cells above/below as not likely and instead targets the left and right sides with equal likelihood 
 basis1:
   - link: /img/blog/box-proximity/latex/basis1.png
     alt: Change of base from rect coordinates to global
@@ -33,6 +35,12 @@ https://www.janvas.com/v6.1/janvas_web_6.1/en/howto.php
 A Battleship playing script I wrote for fun. It generates random Battleship starting locations and then systematically seeks them out! [Play it online here](https://replit.com/@Sylvernale/Battleship#main.py:89:8)
 <!--more-->
 I was inspired by one of my favorite programming related websites - [Data Genetics](https://datagenetics.com/blog/december32011/index.html), which describes on a high level a system of alternately *Hunting* for ships until you hit one, then *Targeting* the ship until it sinks.
+
+{% include image-grid2.html image-set=page.board-images class="col-sm-6 col-xs-12" %}
+
+{% include image-grid2.html image-set=page.initial-board class="col-sm-6 col-xs-12" %}
+
+{% include image-grid2.html image-set=page.targeting class="col-sm-6 col-xs-12" %}
 
 ## Hunting Mode
 This code consists primarily of *counting*. It takes each ship that hasn't sunk yet and tries to place it in every possible position across the board. If I shot at a cell and it missed, then a ship cannot be placed in any position overlapping a miss marker. It also cannot overlap a sunk ship. The result is that for each cell I have a number representing how many ships can be fit across the cell, which I interpret as a likelihood. I take just the most likely positions and throw out the rest. I then randomly choose among the most likely and shoot. This process repeats indefinitely until I hit a ship and go into *targeting mode*.  
@@ -82,7 +90,7 @@ if it were (20,10). This greatly simplifies the logic. The rest of the code is
 testing whether the point is inside, to the right, above, or right & above,
 of the rectangle. Finding the distance in each case is trivial.
 
-{% include image-grid2.html image-set=page.rect-graph class="col-sm-6 col-xs-12" %}
+
 Great, so the initial plots look correct for a normal rectangles. My plan to
 visualize it worked it, meaning I can see many results at once. The third picture
 shows the points close to an infinitely small rectangle. As predicted, it's a circle.
