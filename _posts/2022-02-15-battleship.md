@@ -3,7 +3,7 @@ layout: post
 title: Solving Battleship
 image: /img/blog/battleship/battleship-logo.png
 github: David-Carlson/Battleship
-tags: [python, ai]
+tags: [python, ai, numpy]
 excerpt_separator: <!--more-->
 initial-board:
   - link: /img/blog/battleship/initial-board.png
@@ -23,7 +23,7 @@ A Battleship playing script I wrote for fun. It generates random Battleship star
 
 <!--more-->
 
-I was inspired by one of my favorite programming related websites - [Data Genetics](https://datagenetics.com/blog/december32011/index.html), which describes on a high level a system of alternately *Hunting* for ships until you hit one, then *Targeting* the ship until it sinks.
+I was inspired by one of my favorite programming related websites - [Data Genetics](https://datagenetics.com/blog/december32011/index.html), which describes on a high level a system of alternately *Hunting* for ships until you hit one, then *Targeting* the ship until it sinks. Lacking any actual implementation, I created my own based in Python and Numpy.
 
 {% include image-grid2.html image-set=page.initial-board class="col-sm-6 col-xs-12" %}
 
