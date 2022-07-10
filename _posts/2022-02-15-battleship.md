@@ -9,6 +9,10 @@ initial-board:
   - link: /img/blog/battleship/initial-board.png
     alt: A display showing the program's view of the board, the actual state, and the probabilities of ships being in a given cell
     caption: Playing field shows hits as X, misses as O, and sunk ships as shaded blocks. 
+  - link: /img/blog/battleship/prob-array.png
+    alt: A graph of varying shades showing relative probabilities of a ship being in any position.
+    caption: This shows the probability of an aircraft carrier being in any given position. 
+
 targeting:
   - link: /img/blog/battleship/targeting-ships.png
     alt: Targeting mode showing the hits, misses, and where the program wants to aim next, either left or right of the hits
