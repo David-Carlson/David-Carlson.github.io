@@ -28,7 +28,11 @@ I used Spotify's API paired with my own web scraping code to download a user's p
 <!--more-->
 
 ## Web Scraping
+This is a multi-step process that starts with supplying the Spotify ID of the users you are interested in, and some limits on how much music meta-data to download. I start by downloading all users' Playlists, from which I get information on every Song. I use that information to find each Album and Artist related to these Songs, as well as the Genres associated with Artists/Albums. I parse this information into my own DataObjects, while dealing with dropped API calls, Null Songs and Albums with only Null Songs. 
 
+With this information I write it all in a SQL format along with a custom manifest that details what information is within, how many Songs/Albums, and a calculated Hash that summarizes how I output the information so I can correctly read it. This results in a data Archive consisting of a particular set of Users' data. 
 
 ## Analysis
+Each Archive can be loaded separated to have analyses run on them. They are accessed through an interactive terminal where Admins can load/modify Archives and Users can login to query their data to ascertain new patterns using Spark Sql. A User can ask questions like what Genres do they listen to more than the others, and vice versa, or which user listens to the most profane albums. I correlate Users to average Album length to find patterns like how listens to more Classical music/Film scores versus short Pop songs. 
+
 
