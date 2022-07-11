@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Spotify Analyzer
+image: /img/blog/Spotify/spotify-logo.png
 github: David-Carlson/SpotifyAnalyzer
 tags: [scala, api, spark]
 excerpt_separator: <!--more-->
