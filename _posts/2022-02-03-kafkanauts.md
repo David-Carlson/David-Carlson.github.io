@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kafkanuts Data Generator
+title: Kafkanauts Data Generator
 github: BigData2022RevatureProject3/Kafkanauts
 tags: [scala, aws, spark, kafka]
 excerpt_separator: <!--more-->
